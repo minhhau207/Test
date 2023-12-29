@@ -154,7 +154,7 @@ local ui =  game:GetService("CoreGui"):FindFirstChild("redui") if ui then ui:Des
 		local NameReal = Instance.new("TextLabel")
 
 		NameReal.Parent = MainSceen
-		NameReal.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		NameReal.BackgroundColor3 = Color3.fromRGB(64, 64, 64)
 		NameReal.BackgroundTransparency = 1
 		NameReal.BorderSizePixel = 0
 		NameReal.Position = UDim2.new(0.5, 0, 0.05, 0)
@@ -170,7 +170,7 @@ local ui =  game:GetService("CoreGui"):FindFirstChild("redui") if ui then ui:Des
 		MainSceen2.Name = "MainSceen2"
 		MainSceen2.Parent = MainSceen
 		MainSceen2.AnchorPoint = Vector2.new(0.5, 0.5)
-		MainSceen2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		MainSceen2.BackgroundColor3 = Color3.fromRGB(64, 64, 64)
 		MainSceen2.BorderSizePixel = 0
 		MainSceen2.Position = UDim2.new(0.5, 0, 0.5, 0)
 		MainSceen2.Size = UDim2.new(0, 0, 0, 0)
@@ -200,7 +200,7 @@ local ui =  game:GetService("CoreGui"):FindFirstChild("redui") if ui then ui:Des
 
 		ScrollingFrame_Menubar.Parent = ScolTapBarFrame
 		ScrollingFrame_Menubar.Active = true
-		ScrollingFrame_Menubar.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		ScrollingFrame_Menubar.BackgroundColor3 = Color3.fromRGB(64, 64, 64)
 		ScrollingFrame_Menubar.BackgroundTransparency = 1
 		ScrollingFrame_Menubar.BorderSizePixel = 0
 		ScrollingFrame_Menubar.Size = UDim2.new(0, 500, 0, 35)
@@ -287,7 +287,7 @@ local ui =  game:GetService("CoreGui"):FindFirstChild("redui") if ui then ui:Des
 			local imagenoti = Instance.new("ImageLabel")
 
 			imagenoti.Parent = TitleFrame
-			imagenoti.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+			imagenoti.BackgroundColor3 = Color3.fromRGB(64, 64, 64)
 			imagenoti.BackgroundTransparency = 1.000
 			imagenoti.AnchorPoint = Vector2.new(0.5, 0.5)
 			imagenoti.Position = UDim2.new(0.9, 0, 0.5, 0)
@@ -329,7 +329,7 @@ local ui =  game:GetService("CoreGui"):FindFirstChild("redui") if ui then ui:Des
 			TextNoti.Size =UDim2.new(0, 260, 0,25 )
 			TextNoti.Font = Enum.Font.GothamBold
 			TextNoti.Text = text
-			TextNoti.TextColor3 = Color3.fromRGB(255, 255, 255)
+			TextNoti.TextColor3 = Color3.fromRGB(64, 64, 64)
 			TextNoti.TextSize = 13.000
 			TextNoti.AnchorPoint = Vector2.new(0.5, 0.5)
 			TextNoti.Position = UDim2.new(0.5, 0, 0.5, 0)
@@ -385,7 +385,7 @@ local ui =  game:GetService("CoreGui"):FindFirstChild("redui") if ui then ui:Des
 			local Frame_Tap = Instance.new("Frame")
 			Frame_Tap.Parent = ScrollingFrame_Menubar
 			Frame_Tap.Name = text.."Server"
-			Frame_Tap.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+			Frame_Tap.BackgroundColor3 = Color3.fromRGB(64, 64, 64)
 			Frame_Tap.BackgroundTransparency = 1
 			Frame_Tap.Position = UDim2.new(0.0, 0, 0.0, 0)
 			Frame_Tap.Size = UDim2.new(0, 100, 0, 25)
@@ -408,7 +408,7 @@ local ui =  game:GetService("CoreGui"):FindFirstChild("redui") if ui then ui:Des
 
 			TextButton_Tap.Parent = Frame_Tap
 			TextButton_Tap.Name = "TextButton_Tap"
-			TextButton_Tap.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+			TextButton_Tap.BackgroundColor3 = Color3.fromRGB(64, 64, 64)
 			TextButton_Tap.BackgroundTransparency = 1.000
 			TextButton_Tap.Position = UDim2.new(0.114491031, 0, -0.0216345787, 0)
 			TextButton_Tap.Size = UDim2.new(0, 80, 0, 20)
@@ -556,7 +556,7 @@ local ui =  game:GetService("CoreGui"):FindFirstChild("redui") if ui then ui:Des
 				local Toggle = Instance.new("Frame")
 
 				Toggle.Parent = ScrollingFrame_Pageframe
-				Toggle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+				Toggle.BackgroundColor3 = Color3.fromRGB(64, 64, 64)
 				Toggle.BorderSizePixel = 0
 				Toggle.Position = UDim2.new(0.5, 0, 0.5, 0)
 				Toggle.Size = UDim2.new(0, 213, 0, 35)
@@ -644,7 +644,7 @@ local ui =  game:GetService("CoreGui"):FindFirstChild("redui") if ui then ui:Des
 				local TextLabel_Toggle = Instance.new("TextLabel")
 
 				TextLabel_Toggle.Parent = Toggle
-				TextLabel_Toggle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+				TextLabel_Toggle.BackgroundColor3 = Color3.fromRGB(64, 64, 64)
 				TextLabel_Toggle.BackgroundTransparency = 1
 				TextLabel_Toggle.AnchorPoint = Vector2.new(0.5, 0.5)
 				TextLabel_Toggle.Position = UDim2.new(0.4, 0, 0.5, 0)
@@ -680,7 +680,7 @@ local ui =  game:GetService("CoreGui"):FindFirstChild("redui") if ui then ui:Des
 					TweenService:Create(
 						TextLabel_Toggle,
 						TweenInfo.new(0.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
-						{TextColor3 = Color3.fromRGB(255, 255, 255)} -- UDim2.new(0, 128, 0, 25)
+						{TextColor3 = Color3.fromRGB(64, 64, 64)} -- UDim2.new(0, 128, 0, 25)
 					):Play()
 				end
 			)
@@ -730,7 +730,7 @@ local ui =  game:GetService("CoreGui"):FindFirstChild("redui") if ui then ui:Des
 					TweenService:Create(
 						TextButton_3_Toggle,
 						TweenInfo.new(0.4, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
-						{BackgroundColor3 =  Color3.fromRGB(255, 255, 255)} -- UDim2.new(0, 128, 0, 25)
+						{BackgroundColor3 =  Color3.fromRGB(64, 64, 64)} -- UDim2.new(0, 128, 0, 25)
 					):Play()
 					TweenService:Create(
 						TextButton_2_Toggle,
@@ -883,7 +883,7 @@ local ui =  game:GetService("CoreGui"):FindFirstChild("redui") if ui then ui:Des
 					TweenService:Create(
 						Button,
 						TweenInfo.new(0.4, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
-						{TextColor3 = Color3.fromRGB(255, 255, 255)} -- UDim2.new(0, 128, 0, 25)
+						{TextColor3 = Color3.fromRGB(64, 64, 64)} -- UDim2.new(0, 128, 0, 25)
 					):Play()
 				end
 			)
@@ -979,7 +979,7 @@ local ui =  game:GetService("CoreGui"):FindFirstChild("redui") if ui then ui:Des
 				local LabelNameSliderxd = Instance.new("TextLabel")
 
 				LabelNameSliderxd.Parent = SliderFrame
-				LabelNameSliderxd.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+				LabelNameSliderxd.BackgroundColor3 = Color3.fromRGB(64, 64, 64)
 				LabelNameSliderxd.BackgroundTransparency = 1
 				LabelNameSliderxd.BorderSizePixel = 0
 				LabelNameSliderxd.Position = UDim2.new(0.35, 0, 0.2, 0)
@@ -987,7 +987,7 @@ local ui =  game:GetService("CoreGui"):FindFirstChild("redui") if ui then ui:Des
 				LabelNameSliderxd.Size = UDim2.new(0, 120, 0, 20)
 				LabelNameSliderxd.Font = Enum.Font.GothamBold
 				LabelNameSliderxd.Text = tostring(text)
-				LabelNameSliderxd.TextColor3 = Color3.fromRGB(255, 255, 255)
+				LabelNameSliderxd.TextColor3 = Color3.fromRGB(64, 64, 64)
 				LabelNameSliderxd.TextSize = 11.000
 				LabelNameSliderxd.TextXAlignment = Enum.TextXAlignment.Left
 
@@ -1022,7 +1022,7 @@ local ui =  game:GetService("CoreGui"):FindFirstChild("redui") if ui then ui:Des
 				else
 					CustomValue.Text =  tostring(de and math.floor( (de / max) * (max - min) + min) or 0)
 				end
-				CustomValue.TextColor3 = Color3.fromRGB(255, 255, 255)
+				CustomValue.TextColor3 = Color3.fromRGB(64, 64, 64)
 				CustomValue.TextSize = 8.000
 				CustomValue.BackgroundTransparency = 1
 
@@ -1081,7 +1081,7 @@ local ui =  game:GetService("CoreGui"):FindFirstChild("redui") if ui then ui:Des
 
 				ConneValue.Name = "ConneValue"
 				ConneValue.Parent = PartValue
-				ConneValue.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+				ConneValue.BackgroundColor3 = Color3.fromRGB(64, 64, 64)
 				ConneValue.Size = UDim2.new(0, 13, 0,13)
 				ConneValue.BackgroundTransparency = 0
 				ConneValue.BorderSizePixel = 0
@@ -1189,7 +1189,7 @@ local ui =  game:GetService("CoreGui"):FindFirstChild("redui") if ui then ui:Des
 
 				TextButton_Toggle.Parent = ValueFrame
 				TextButton_Toggle.BackgroundTransparency =1
-				TextButton_Toggle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+				TextButton_Toggle.BackgroundColor3 = Color3.fromRGB(64, 64, 64)
 				TextButton_Toggle.BorderSizePixel = 0
 				TextButton_Toggle.Size = UDim2.new(0, 50, 0, 20)
 				TextButton_Toggle.AutoButtonColor = false
@@ -1441,7 +1441,7 @@ local ui =  game:GetService("CoreGui"):FindFirstChild("redui") if ui then ui:Des
 						TweenService:Create(
 							TextButton_3_Toggle,
 							TweenInfo.new(0.4, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
-							{BackgroundColor3 =  Color3.fromRGB(255, 255, 255)} -- UDim2.new(0, 128, 0, 25)
+							{BackgroundColor3 =  Color3.fromRGB(64, 64, 64)} -- UDim2.new(0, 128, 0, 25)
 						):Play()
 						TweenService:Create(
 							TextButton_2_Toggle,
@@ -1538,7 +1538,7 @@ local ui =  game:GetService("CoreGui"):FindFirstChild("redui") if ui then ui:Des
 				local LabelNameSliderxd = Instance.new("TextLabel")
 
 				LabelNameSliderxd.Parent = SliderFrame
-				LabelNameSliderxd.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+				LabelNameSliderxd.BackgroundColor3 = Color3.fromRGB(64, 64, 64)
 				LabelNameSliderxd.BackgroundTransparency = 1
 				LabelNameSliderxd.BorderSizePixel = 0
 				LabelNameSliderxd.Position = UDim2.new(0.35, 0, 0.2, 0)
@@ -1546,7 +1546,7 @@ local ui =  game:GetService("CoreGui"):FindFirstChild("redui") if ui then ui:Des
 				LabelNameSliderxd.Size = UDim2.new(0, 120, 0, 20)
 				LabelNameSliderxd.Font = Enum.Font.GothamBold
 				LabelNameSliderxd.Text = tostring(text)
-				LabelNameSliderxd.TextColor3 = Color3.fromRGB(255, 255, 255)
+				LabelNameSliderxd.TextColor3 = Color3.fromRGB(64, 64, 64)
 				LabelNameSliderxd.TextSize = 11.000
 				LabelNameSliderxd.TextXAlignment = Enum.TextXAlignment.Left
 
@@ -1581,7 +1581,7 @@ local ui =  game:GetService("CoreGui"):FindFirstChild("redui") if ui then ui:Des
 				else
 					CustomValue.Text =  tostring(de and math.floor( (de / max) * (max - min) + min) or 0)
 				end
-				CustomValue.TextColor3 = Color3.fromRGB(255, 255, 255)
+				CustomValue.TextColor3 = Color3.fromRGB(64, 64, 64)
 				CustomValue.TextSize = 8.000
 				CustomValue.BackgroundTransparency = 1
 
@@ -1640,7 +1640,7 @@ local ui =  game:GetService("CoreGui"):FindFirstChild("redui") if ui then ui:Des
 
 				ConneValue.Name = "ConneValue"
 				ConneValue.Parent = PartValue
-				ConneValue.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+				ConneValue.BackgroundColor3 = Color3.fromRGB(64, 64, 64)
 				ConneValue.Size = UDim2.new(0, 13, 0,13)
 				ConneValue.BackgroundTransparency = 0
 				ConneValue.BorderSizePixel = 0
@@ -1917,7 +1917,7 @@ local ui =  game:GetService("CoreGui"):FindFirstChild("redui") if ui then ui:Des
 				ScolDown.Position = UDim2.new(0.02, 0, 1., 0)
 				ScolDown.Parent = LabelFrameDrop
 				ScolDown.Active = true
-				ScolDown.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+				ScolDown.BackgroundColor3 = Color3.fromRGB(64, 64, 64)
 				ScolDown.BorderSizePixel = 0
 				ScolDown.Size = UDim2.new(0, 205, 0, 115)
 				ScolDown.ScrollBarThickness = 3
@@ -2019,7 +2019,7 @@ local ui =  game:GetService("CoreGui"):FindFirstChild("redui") if ui then ui:Des
 						TweenService:Create(
 							TextLabel_TapDro2p,
 							TweenInfo.new(0.4, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
-							{TextColor3 = Color3.fromRGB(255, 255, 255)} -- UDim2.new(0, 128, 0, 25)
+							{TextColor3 = Color3.fromRGB(64, 64, 64)} -- UDim2.new(0, 128, 0, 25)
 						):Play()
 					end)
 
@@ -2062,12 +2062,12 @@ local ui =  game:GetService("CoreGui"):FindFirstChild("redui") if ui then ui:Des
 					TweenService:Create(
 						TextLabel_TapDrop,
 						TweenInfo.new(0.4, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
-						{TextColor3 = Color3.fromRGB(255, 255, 255)} -- UDim2.new(0, 128, 0, 25)
+						{TextColor3 = Color3.fromRGB(64, 64, 64)} -- UDim2.new(0, 128, 0, 25)
 					):Play()
 					TweenService:Create(
 						DropArbt_listimage,
 						TweenInfo.new(0.4, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
-						{ImageColor3 = Color3.fromRGB(255, 255, 255)} -- UDim2.new(0, 128, 0, 25)
+						{ImageColor3 = Color3.fromRGB(64, 64, 64)} -- UDim2.new(0, 128, 0, 25)
 					):Play()
 				end
 			)
@@ -2185,7 +2185,7 @@ local ui =  game:GetService("CoreGui"):FindFirstChild("redui") if ui then ui:Des
 					TweenService:Create(
 						TextLabel_TapDro2p,
 						TweenInfo.new(0.4, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
-						{TextColor3 = Color3.fromRGB(255, 255, 255)} -- UDim2.new(0, 128, 0, 25)
+						{TextColor3 = Color3.fromRGB(64, 64, 64)} -- UDim2.new(0, 128, 0, 25)
 					):Play()
 				end)
 
@@ -2311,7 +2311,7 @@ local ui =  game:GetService("CoreGui"):FindFirstChild("redui") if ui then ui:Des
 			ScolDown.Position = UDim2.new(0.02, 0, 1., 0)
 			ScolDown.Parent = LabelFrameDrop
 			ScolDown.Active = true
-			ScolDown.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+			ScolDown.BackgroundColor3 = Color3.fromRGB(64, 64, 64)
 			ScolDown.BorderSizePixel = 0
 			ScolDown.Size = UDim2.new(0, 205, 0, 115)
 			ScolDown.ScrollBarThickness = 3
@@ -2438,7 +2438,7 @@ local ui =  game:GetService("CoreGui"):FindFirstChild("redui") if ui then ui:Des
 
 				textlist.Parent = listtextbutton
 				textlist.Name = "textlist"
-				textlist.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+				textlist.BackgroundColor3 = Color3.fromRGB(64, 64, 64)
 				textlist.BackgroundTransparency = 1.000
 				textlist.AnchorPoint = Vector2.new(0.5, 0.5)
 				textlist.Position = UDim2.new(0.5, 0, 0.5, 0)
@@ -2446,7 +2446,7 @@ local ui =  game:GetService("CoreGui"):FindFirstChild("redui") if ui then ui:Des
 				textlist.Size = UDim2.new(0, 91, 0, 25)
 				textlist.Font = Enum.Font.GothamSemibold
 				textlist.Text = tostring(v.Name)
-				textlist.TextColor3 = Color3.fromRGB(255, 255, 255)
+				textlist.TextColor3 = Color3.fromRGB(64, 64, 64)
 				textlist.TextSize = 13.000
 
 
@@ -2501,12 +2501,12 @@ local ui =  game:GetService("CoreGui"):FindFirstChild("redui") if ui then ui:Des
 				TweenService:Create(
 					TextLabel_TapDrop,
 					TweenInfo.new(0.4, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
-					{TextColor3 = Color3.fromRGB(255, 255, 255)} -- UDim2.new(0, 128, 0, 25)
+					{TextColor3 = Color3.fromRGB(64, 64, 64)} -- UDim2.new(0, 128, 0, 25)
 				):Play()
 				TweenService:Create(
 					DropArbt_listimage,
 					TweenInfo.new(0.4, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
-					{ImageColor3 = Color3.fromRGB(255, 255, 255)} -- UDim2.new(0, 128, 0, 25)
+					{ImageColor3 = Color3.fromRGB(64, 64, 64)} -- UDim2.new(0, 128, 0, 25)
 				):Play()
 			end
 		)
@@ -2586,7 +2586,7 @@ local ui =  game:GetService("CoreGui"):FindFirstChild("redui") if ui then ui:Des
 				local LabelNameSliderxd = Instance.new("TextLabel")
 
 				LabelNameSliderxd.Parent = TextFrame
-				LabelNameSliderxd.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+				LabelNameSliderxd.BackgroundColor3 = Color3.fromRGB(64, 64, 64)
 				LabelNameSliderxd.BackgroundTransparency = 1
 				LabelNameSliderxd.BorderSizePixel = 0
 				LabelNameSliderxd.Position = UDim2.new(0.5, 0, 0.2, 0)
@@ -2664,17 +2664,17 @@ local ui =  game:GetService("CoreGui"):FindFirstChild("redui") if ui then ui:Des
 					TweenService:Create(
 						TextFrame2,
 						TweenInfo.new(0.4, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
-						{PlaceholderColor3 = Color3.fromRGB(255, 255, 255)} -- UDim2.new(0, 128, 0, 25)
+						{PlaceholderColor3 = Color3.fromRGB(64, 64, 64)} -- UDim2.new(0, 128, 0, 25)
 					):Play()
 					TweenService:Create(
 						TextFrame2,
 						TweenInfo.new(0.4, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
-						{TextColor3 = Color3.fromRGB(255, 255, 255)} -- UDim2.new(0, 128, 0, 25)
+						{TextColor3 = Color3.fromRGB(64, 64, 64)} -- UDim2.new(0, 128, 0, 25)
 					):Play()
 					TweenService:Create(
 						LabelNameSliderxd,
 						TweenInfo.new(0.4, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
-						{TextColor3 = Color3.fromRGB(255, 255, 255)} -- UDim2.new(0, 128, 0, 25)
+						{TextColor3 = Color3.fromRGB(64, 64, 64)} -- UDim2.new(0, 128, 0, 25)
 					):Play()
 					TweenService:Create(
 						TextBoxStroke,
@@ -2755,7 +2755,7 @@ local ui =  game:GetService("CoreGui"):FindFirstChild("redui") if ui then ui:Des
 				local LabelBind = Instance.new("TextLabel")
 
 				LabelBind.Parent = BindFrame
-				LabelBind.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+				LabelBind.BackgroundColor3 = Color3.fromRGB(64, 64, 64)
 				LabelBind.BackgroundTransparency = 1
 				LabelBind.BorderSizePixel = 0
 				LabelBind.Position = UDim2.new(0.4, 0, 0.5, 0)
@@ -2772,7 +2772,7 @@ local ui =  game:GetService("CoreGui"):FindFirstChild("redui") if ui then ui:Des
 
 				LabelBind2.Parent = BindFrame
 				LabelBind2.Name = "LabelBind2"
-				LabelBind2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+				LabelBind2.BackgroundColor3 = Color3.fromRGB(64, 64, 64)
 				LabelBind2.Size = UDim2.new(0, 100, 0, 19)
 				LabelBind2.Font = Enum.Font.GothamBold
 				LabelBind2.Text =  "KEY : "..key
@@ -2788,7 +2788,7 @@ local ui =  game:GetService("CoreGui"):FindFirstChild("redui") if ui then ui:Des
 
 				LabelBind22.Parent = BindFrame
 				LabelBind22.Name = "LabelBind22"
-				LabelBind22.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+				LabelBind22.BackgroundColor3 = Color3.fromRGB(64, 64, 64)
 				LabelBind22.Size = UDim2.new(0, 213, 0, 35)
 				LabelBind22.Font = Enum.Font.GothamBold
 				LabelBind22.Text =  ""
@@ -2809,17 +2809,17 @@ local ui =  game:GetService("CoreGui"):FindFirstChild("redui") if ui then ui:Des
 					TweenService:Create(
 						LabelBind22,
 						TweenInfo.new(0.4, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
-						{TextColor3 = Color3.fromRGB(255, 255, 255)} -- UDim2.new(0, 128, 0, 25)
+						{TextColor3 = Color3.fromRGB(64, 64, 64)} -- UDim2.new(0, 128, 0, 25)
 					):Play()
 					TweenService:Create(
 						LabelBind2,
 						TweenInfo.new(0.4, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
-						{TextColor3 = Color3.fromRGB(255, 255, 255)} -- UDim2.new(0, 128, 0, 25)
+						{TextColor3 = Color3.fromRGB(64, 64, 64)} -- UDim2.new(0, 128, 0, 25)
 					):Play()
 					TweenService:Create(
 						LabelBind,
 						TweenInfo.new(0.4, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
-						{TextColor3 = Color3.fromRGB(255, 255, 255)} -- UDim2.new(0, 128, 0, 25)
+						{TextColor3 = Color3.fromRGB(64, 64, 64)} -- UDim2.new(0, 128, 0, 25)
 					):Play()
 				end
 			)
@@ -2936,7 +2936,7 @@ local ui =  game:GetService("CoreGui"):FindFirstChild("redui") if ui then ui:Des
 				local TextFrameColor = Instance.new("TextLabel")
 
 				TextFrameColor.Parent = Pixker
-				TextFrameColor.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+				TextFrameColor.BackgroundColor3 = Color3.fromRGB(64, 64, 64)
 				TextFrameColor.BorderSizePixel = 0
 				TextFrameColor.Size = UDim2.new(0, 200, 0, 34)
 				TextFrameColor.Font = Enum.Font.SourceSans
@@ -2949,7 +2949,7 @@ local ui =  game:GetService("CoreGui"):FindFirstChild("redui") if ui then ui:Des
 				local TextReal = Instance.new("TextLabel")
 
 				TextReal.Parent = TextFrameColor
-				TextReal.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+				TextReal.BackgroundColor3 = Color3.fromRGB(64, 64, 64)
 				TextReal.BorderSizePixel = 0
 				TextReal.Size = UDim2.new(0, 140, 0, 34)
 				TextReal.Font = Enum.Font.GothamSemibold
@@ -2964,7 +2964,7 @@ local ui =  game:GetService("CoreGui"):FindFirstChild("redui") if ui then ui:Des
 
 				BoxColor.Name = "BoxColor"
 				BoxColor.Parent = TextFrameColor
-				BoxColor.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+				BoxColor.BackgroundColor3 = Color3.fromRGB(64, 64, 64)
 				BoxColor.Position = UDim2.new(0.85, 0, 0.5, 0)
 				BoxColor.Size = UDim2.new(0, 35, 0, 19)
 				BoxColor.AnchorPoint = Vector2.new(0.5, 0.5)
@@ -3092,7 +3092,7 @@ local ui =  game:GetService("CoreGui"):FindFirstChild("redui") if ui then ui:Des
 
 			TextButton_Toggle.Parent = ValueFrame
 			TextButton_Toggle.BackgroundTransparency =1
-			TextButton_Toggle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+			TextButton_Toggle.BackgroundColor3 = Color3.fromRGB(64, 64, 64)
 			TextButton_Toggle.BorderSizePixel = 0
 			TextButton_Toggle.Size = UDim2.new(0, 50, 0, 20)
 			TextButton_Toggle.AutoButtonColor = false
@@ -3114,7 +3114,7 @@ local ui =  game:GetService("CoreGui"):FindFirstChild("redui") if ui then ui:Des
 			TextButton_3_Toggle2.Size = UDim2.new(0, 500, 0, 21)
 			TextButton_3_Toggle2.Font = Enum.Font.SourceSansBold
 			TextButton_3_Toggle2.Text = "Rainbow"
-			TextButton_3_Toggle2.TextColor3 = Color3.fromRGB(255, 255, 255)
+			TextButton_3_Toggle2.TextColor3 = Color3.fromRGB(64, 64, 64)
 			TextButton_3_Toggle2.TextSize = 13.000
 			TextButton_3_Toggle2.BackgroundTransparency = 1
 
@@ -3122,7 +3122,7 @@ local ui =  game:GetService("CoreGui"):FindFirstChild("redui") if ui then ui:Des
 
 			OMF.Parent = TextButton_2_Toggle
 			OMF.BackgroundTransparency =1
-			OMF.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+			OMF.BackgroundColor3 = Color3.fromRGB(64, 64, 64)
 			OMF.BorderSizePixel = 0
 			OMF.Size = UDim2.new(0, 100, 0, 20)
 			OMF.AutoButtonColor = false
@@ -3155,7 +3155,7 @@ local ui =  game:GetService("CoreGui"):FindFirstChild("redui") if ui then ui:Des
 			ColorSelection.Name = "ColorSelection"
 			ColorSelection.Parent = Color
 			ColorSelection.AnchorPoint = Vector2.new(0.5, 0.5)
-			ColorSelection.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+			ColorSelection.BackgroundColor3 = Color3.fromRGB(64, 64, 64)
 			ColorSelection.BackgroundTransparency = 1.000
 			ColorSelection.Position = UDim2.new(preset and select(3, Color3.toHSV(preset)))
 			ColorSelection.Size = UDim2.new(0, 18, 0, 18)
@@ -3168,7 +3168,7 @@ local ui =  game:GetService("CoreGui"):FindFirstChild("redui") if ui then ui:Des
 			Hue.Name = "Hue2"
 			Hue.Parent = TextFrameColor
 			Hue.Position = UDim2.new(0.14,0,3,0)
-			Hue.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+			Hue.BackgroundColor3 = Color3.fromRGB(64, 64, 64)
 			Hue.Size = UDim2.new(0, 160, 0, 25)
 			Hue.ZIndex = 0
 			Hue.BorderSizePixel = 0
@@ -3199,7 +3199,7 @@ local ui =  game:GetService("CoreGui"):FindFirstChild("redui") if ui then ui:Des
 			HueSelection.Name = "HueSelection"
 			HueSelection.Parent = Hue
 			HueSelection.AnchorPoint = Vector2.new(0.5, 0.5)
-			HueSelection.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+			HueSelection.BackgroundColor3 = Color3.fromRGB(64, 64, 64)
 			HueSelection.BackgroundTransparency = 1.000
 			HueSelection.Position = UDim2.new(preset and select(3, Color3.toHSV(preset)))
 			HueSelection.Size = UDim2.new(0, 18, 0, 18)
@@ -3219,7 +3219,7 @@ local ui =  game:GetService("CoreGui"):FindFirstChild("redui") if ui then ui:Des
 			BTN_XD.Size = UDim2.new(0, 50, 0, 25)
 			BTN_XD.Font = Enum.Font.GothamSemibold
 			BTN_XD.Text = "Confirm"
-			BTN_XD.TextColor3 = Color3.fromRGB(255, 255, 255)
+			BTN_XD.TextColor3 = Color3.fromRGB(64, 64, 64)
 			BTN_XD.TextSize = 11.000
 			BTN_XD.AutoButtonColor = false
 
@@ -3271,7 +3271,7 @@ local ui =  game:GetService("CoreGui"):FindFirstChild("redui") if ui then ui:Des
 					TweenService:Create(
 						TextButton_3_Toggle,
 						TweenInfo.new(0.4, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
-						{BackgroundColor3 =  Color3.fromRGB(255, 255, 255)} -- UDim2.new(0, 128, 0, 25)
+						{BackgroundColor3 =  Color3.fromRGB(64, 64, 64)} -- UDim2.new(0, 128, 0, 25)
 					):Play()
 					TweenService:Create(
 						TextButton_2_Toggle,
@@ -3553,7 +3553,7 @@ local ui =  game:GetService("CoreGui"):FindFirstChild("redui") if ui then ui:Des
 				LabelFarm2.Size =UDim2.new(0, 130, 0,24 )
 				LabelFarm2.Font = Enum.Font.SourceSansSemibold
 				LabelFarm2.Text = text
-				LabelFarm2.TextColor3 = Color3.fromRGB(255, 255, 255)
+				LabelFarm2.TextColor3 = Color3.fromRGB(64, 64, 64)
 				LabelFarm2.TextSize = 12.000
 				LabelFarm2.AnchorPoint = Vector2.new(0.5, 0.5)
 				LabelFarm2.Position = UDim2.new(0.5, 0, 0.5, 0)
