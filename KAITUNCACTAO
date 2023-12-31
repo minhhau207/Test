@@ -100,7 +100,7 @@ _G.Settings = {
 		["Fast Attack"] = true,
 		["Fast Attack Type"] = {"Fast"}, --{Normal,Fast,Slow}
 
-		["Select Weapon"] = {},
+		["Select Weapon"] = {"Mele"},
 
 
 		--[Misc Configs]
