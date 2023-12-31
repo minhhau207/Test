@@ -1,6 +1,4 @@
-SelectWeapon = "Mele"--"Sword", "Fruit"
-_G.Settings.Configs["Fast Attack Type"] = "Normal"-- {"Fast","Normal","Slow"}
-_G.Settings.Configs["Fast Attack"] = true --\\ false
+
 if game:GetService("ReplicatedStorage").Effect.Container:FindFirstChild("Death") then
 	game:GetService("ReplicatedStorage").Effect.Container.Death:Destroy()
 end
@@ -190,6 +188,8 @@ _G.Settings = {
 		ColorUI = Color3.fromRGB(255, 0, 127), --{Color UI}
 	}
 }
+_G.Settings.Configs["Fast Attack Type"] = SpeedFastAttack
+_G.Settings.Configs["Fast Attack"] = FastAttackOrNo --\\ false
 -- [require module]
 
 local CombatFramework = require(game:GetService("Players").LocalPlayer.PlayerScripts:WaitForChild("CombatFramework"))
