@@ -1635,7 +1635,7 @@ E:AddToggle(
             saveSettings()
             task.spawn(
                 function()
-                    while task.wait(_G.Settings.punchdelay) do
+                    while task.wait(1) do
                         if not _G.Settings.AutoPunch then
                             break
                         end
