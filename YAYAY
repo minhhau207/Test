@@ -1662,7 +1662,13 @@ E:AddToggle(
                         if not _G.Settings.AutoSkill1 then
                             break
                         end
-                        game:service('VirtualInputManager'):SendKeyEvent(true, "1", false, game)
+                        for m, n in pairs(
+                            getconnections(
+                                game.Players.LocalPlayer.PlayerGui.UniversalGui.UniversalCenterUIFrame.SlotsHolder.Skill1.MouseButton1Click
+                            )
+                        ) do
+                            n:Fire()
+                        end
                     end
                 end
             )
@@ -1683,7 +1689,13 @@ E:AddToggle(
                         if not _G.Settings.AutoSkill2 then
                             break
                         end
-                        game:service('VirtualInputManager'):SendKeyEvent(true, "2", false, game)
+                        for m, n in pairs(
+                            getconnections(
+                                game.Players.LocalPlayer.PlayerGui.UniversalGui.UniversalCenterUIFrame.SlotsHolder.Skill2.MouseButton1Click
+                            )
+                        ) do
+                            n:Fire()
+                        end
                     end
                 end
             )
@@ -1704,7 +1716,13 @@ E:AddToggle(
                         if not _G.Settings.AutoSkill3 then
                             break
                         end
-                        game:service('VirtualInputManager'):SendKeyEvent(true, "3", false, game)
+                        for m, n in pairs(
+                            getconnections(
+                                game.Players.LocalPlayer.PlayerGui.UniversalGui.UniversalCenterUIFrame.SlotsHolder.Skill3.MouseButton1Click
+                            )
+                        ) do
+                            n:Fire()
+                        end
                     end
                 end
             )
@@ -1725,7 +1743,13 @@ E:AddToggle(
                         if not _G.Settings.AutoSkill4 then
                             break
                         end
-game:service('VirtualInputManager'):SendKeyEvent(true, "Z", false, game)
+                        for m, n in pairs(
+                            getconnections(
+                                game.Players.LocalPlayer.PlayerGui.UniversalGui.UniversalCenterUIFrame.SlotsHolder.Skill4.MouseButton1Click
+                            )
+                        ) do
+                            n:Fire()
+                        end
                     end
                 end
             )
@@ -1838,7 +1862,7 @@ E:AddToggle(
 
 
 E:AddSlider(
-    {Name = "Skill Delay", Default = _G.Settings.skilldelay, Min = 0.35, Max = 5, Color = Color3.fromRGB(255,215,0), Callback = function(H)
+    {Name = "Skill Delay", Default = _G.Settings.skilldelay, Min = 0.35, Max = 0.35, Color = Color3.fromRGB(255,215,0), Callback = function(H)
             _G.Settings.skilldelay = H
             saveSettings()
         end}
@@ -1858,7 +1882,7 @@ D:AddSlider(
         end}
 )
 D:AddSlider(
-    {Name = "Over Height", Default = _G.Settings.Height, Min = 3, Max = 10, Color = Color3.fromRGB(255,215,0), Callback = function(H)
+    {Name = "Over Height", Default = _G.Settings.Height, Min = 5, Max = 5, Color = Color3.fromRGB(255,215,0), Callback = function(H)
             _G.Settings.Height = H
             saveSettings()
         end}
@@ -1870,7 +1894,7 @@ D:AddSlider(
         end}
 )
 D:AddSlider(
-    {Name = "Behind Distance", Default = _G.Settings.distance, Min = -5, Max = 20, Color = Color3.fromRGB(255,215,0), Callback = function(H)
+    {Name = "Behind Distance", Default = _G.Settings.distance, Min = 0, Max = 5, Color = Color3.fromRGB(255,215,0), Callback = function(H)
             _G.Settings.distance = H
             saveSettings()
         end}
