@@ -1659,7 +1659,7 @@ E:AddToggle(
             saveSettings()
             task.spawn(
                 function()
-                    while task.wait(0.75) do
+                    while task.wait(0.6) do
                         if not _G.Settings.AutoSkill1 then
                             break
                         end
@@ -1686,7 +1686,7 @@ E:AddToggle(
             saveSettings()
             task.spawn(
                 function()
-                    while task.wait(0.75) do
+                    while task.wait(0.6) do
                         if not _G.Settings.AutoSkill2 then
                             break
                         end
@@ -1713,7 +1713,7 @@ E:AddToggle(
             saveSettings()
             task.spawn(
                 function()
-                    while task.wait(0.75) do
+                    while task.wait(0.6) do
                         if not _G.Settings.AutoSkill3 then
                             break
                         end
@@ -1740,7 +1740,7 @@ E:AddToggle(
             saveSettings()
             task.spawn(
                 function()
-                    while task.wait(0.75) do
+                    while task.wait(0.6) do
                         if not _G.Settings.AutoSkill4 then
                             break
                         end
@@ -1767,7 +1767,7 @@ E:AddToggle(
             saveSettings()
             task.spawn(
                 function()
-                    while task.wait(0.75) do
+                    while task.wait(0.6) do
                         if not _G.Settings.AutoSkill5 then
                             break
                         end
@@ -1794,7 +1794,7 @@ E:AddToggle(
             saveSettings()
             task.spawn(
                 function()
-                    while task.wait(0.75) do
+                    while task.wait(0.6) do
                         if not _G.Settings.AutoSkillFruit then
                             break
                         end
@@ -1816,7 +1816,7 @@ E:AddToggle(
             saveSettings()
             task.spawn(
                 function()
-                    while task.wait(0.75) do
+                    while task.wait(0.6) do
                         if not _G.Settings.AutoSkill5 then
                             break
                         end
@@ -1843,7 +1843,7 @@ E:AddToggle(
             saveSettings()
             task.spawn(
                 function()
-                    while task.wait(0.75) do
+                    while task.wait(0.6) do
                         if not _G.Settings.AutoSkill6 then
                             break
                         end
