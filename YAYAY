@@ -1,7 +1,4 @@
 _G.Settings = {
-Main = {
-    ["Autolvl"] = false
-},
     FriendOnly = false,
     Autotrial = false,
     Autocustom = false,
@@ -32,12 +29,13 @@ local b = "AnimeDimension.lua"
 function saveSettings()
     local c = game:GetService("HttpService")
     local d = c:JSONEncode(_G.Settings)
+    local e = c:JSONEncode(_G.Autolvl)
     if writefile then
         if isfolder(a) then
-            writefile(a .. "\\" .. b, d)
+            writefile(a .. "\\" .. b, d, e)
         else
             makefolder(a)
-            writefile(a .. "\\" .. b, d)
+            writefile(a .. "\\" .. b, d, e)
         end
     end
 end
@@ -188,15 +186,15 @@ Callback = <function> - The function of the colorpicker.
 w:AddToggle(
     {
         Name = "🌀 Auto Level",
-        Default = _G.Settings.Main["Autolvl"],
+        Default = _G.Autolvl,
         Color = Color3.fromRGB(255,215,0),
         Callback = function(H)
-            _G.Settings.Main["Autolvl"] = H
+            _G.Autolvl = H
             saveSettings()
             task.spawn(
                 function()
                     while task.wait(7) do
-                        if not _G.Settings.Main["Autolvl"] then
+                        if not _G.Autolvl then
                             break
                         end
                         wait(10)
