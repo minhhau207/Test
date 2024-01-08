@@ -1,26 +1,26 @@
 _G.Settings = {
 
 	["Autolvl"] = false,
-    ["FriendOnly"] = false,
-    ["Autotrial"] = false,
-    ["Autocustom"] = false,
-    ["CustomDifficulty"] = false,
-    ["Autoraid"] = false,
-    ["Raidselectmap"] = false,
-    ["afkandbraid"] = false,
-    ["farmraidtoken"] = false,
-    ["Autospeedraid"] = false,
-    ["AutoSkillFruit"] = true,
-    ["AutoPunch"] = true,
-    ["AutoSkill1"] = true,
-    ["AutoSkill2"] = true,
+    FriendOnly = false,
+    Autotrial = false,
+    Autocustom = false,
+    CustomDifficulty = false,
+    Autoraid = false,
+    Raidselectmap = false,
+    afkandbraid = false,
+    farmraidtoken = false,
+   Autospeedraid = false,
+AutoSkillFruit = true,
+    AutoPunch = true,
+    AutoSkill1 = true,
+    AutoSkill2 = true,
 
-    ["AutoSkill3"] = true,
-    ["AutoSkill4"] = true,
-    ["AutoSkill5"] = true,
-    ["AutoTP2"] = false,
-    ["AutoTP1"] = false,
-    ["AutoTP"] = false
+    AutoSkill3 = true,
+    AutoSkill4 = true,
+    AutoSkill5 = true,
+    AutoTP2 = false,
+    AutoTP1 = false,
+    AutoTP = false
 }
 
 if not game:IsLoaded() then
@@ -187,7 +187,7 @@ Callback = <function> - The function of the colorpicker.
 w:AddToggle(
     {
         Name = "🌀 Auto Level",
-        Default = _G.Settings.Autolvl,
+        Default = _G.Settings["Autolvl"],
         Color = Color3.fromRGB(255,215,0),
         Callback = function(H)
             _G.Settings.Autolvl = H
@@ -1980,7 +1980,6 @@ spawn(function()
     end
 end)
 _G.Hiro = true
-_G.NameProof = true
 _G.NoClipAfter = 999
 _G.DodgeSize = 5
 local list = {
