@@ -63,7 +63,7 @@ spawn(
         Mouse.KeyDown:connect(
             function(o)
                 o = o:lower()
-                if o == _G.Settings.toggleguikey then
+                if o ==  toggleguikey then
                     task.spawn(HideGui)
                 end
             end
@@ -164,15 +164,15 @@ Callback = <function> - The function of the colorpicker.
 w:AddToggle(
     {
         Name = "🌀 Auto Level",
-        Default = _G.Settings.Autolvl,
+        Default =  Autolvl,
         Color = Color3.fromRGB(255,215,0),
         Callback = function(H)
-            _G.Settings.Autolvl = H
+             Autolvl = H
             saveSettings()
             task.spawn(
                 function()
                     while task.wait(7) do
-                        if not _G.Settings.Autolvl then
+                        if not  Autolvl then
                             break
                         end
                         wait(10)
@@ -183,7 +183,7 @@ w:AddToggle(
                                 "CreateRoom",
                                 {
                                     ["Difficulty"] = "Easy",
-                                    ["FriendsOnly"] = _G.Settings.FriendsOnly,
+                                    ["FriendsOnly"] =  FriendsOnly,
                                     ["MapName"] = "Titan Dimension",
                                     ["Hardcore"] = false
                                 }
@@ -198,7 +198,7 @@ w:AddToggle(
                                 "CreateRoom",
                                 {
                                     ["Difficulty"] = "Hard",
-                                    ["FriendsOnly"] = _G.Settings.FriendsOnly,
+                                    ["FriendsOnly"] =  FriendsOnly,
                                     ["MapName"] = "Titan Dimension",
                                     ["Hardcore"] = false
                                 }
@@ -213,7 +213,7 @@ w:AddToggle(
                                 "CreateRoom",
                                 {
                                     ["Difficulty"] = "Nightmare",
-                                    ["FriendsOnly"] = _G.Settings.FriendsOnly,
+                                    ["FriendsOnly"] =  FriendsOnly,
                                     ["MapName"] = "Titan Dimension",
                                     ["Hardcore"] = false
                                 }
@@ -228,7 +228,7 @@ w:AddToggle(
                                 "CreateRoom",
                                 {
                                     ["Difficulty"] = "Easy",
-                                    ["FriendsOnly"] = _G.Settings.FriendsOnly,
+                                    ["FriendsOnly"] =  FriendsOnly,
                                     ["MapName"] = "Demon Dimension",
                                     ["Hardcore"] = false
                                 }
@@ -243,7 +243,7 @@ w:AddToggle(
                                 "CreateRoom",
                                 {
                                     ["Difficulty"] = "Hard",
-                                    ["FriendsOnly"] = _G.Settings.FriendsOnly,
+                                    ["FriendsOnly"] =  FriendsOnly,
                                     ["MapName"] = "Demon Dimension",
                                     ["Hardcore"] = false
                                 }
@@ -258,7 +258,7 @@ w:AddToggle(
                                 "CreateRoom",
                                 {
                                     ["Difficulty"] = "Nightmare",
-                                    ["FriendsOnly"] = _G.Settings.FriendsOnly,
+                                    ["FriendsOnly"] =  FriendsOnly,
                                     ["MapName"] = "Demon Dimension",
                                     ["Hardcore"] = false
                                 }
@@ -273,7 +273,7 @@ w:AddToggle(
                                 "CreateRoom",
                                 {
                                     ["Difficulty"] = "Easy",
-                                    ["FriendsOnly"] = _G.Settings.FriendsOnly,
+                                    ["FriendsOnly"] =  FriendsOnly,
                                     ["MapName"] = "Curse Dimension",
                                     ["Hardcore"] = false
                                 }
@@ -288,7 +288,7 @@ w:AddToggle(
                                 "CreateRoom",
                                 {
                                     ["Difficulty"] = "Hard",
-                                    ["FriendsOnly"] = _G.Settings.FriendsOnly,
+                                    ["FriendsOnly"] =  FriendsOnly,
                                     ["MapName"] = "Curse Dimension",
                                     ["Hardcore"] = false
                                 }
@@ -303,7 +303,7 @@ w:AddToggle(
                                 "CreateRoom",
                                 {
                                     ["Difficulty"] = "Nightmare",
-                                    ["FriendsOnly"] = _G.Settings.FriendsOnly,
+                                    ["FriendsOnly"] =  FriendsOnly,
                                     ["MapName"] = "Curse Dimension",
                                     ["Hardcore"] = false
                                 }
@@ -318,7 +318,7 @@ w:AddToggle(
                                 "CreateRoom",
                                 {
                                     ["Difficulty"] = "Easy",
-                                    ["FriendsOnly"] = _G.Settings.FriendsOnly,
+                                    ["FriendsOnly"] =  FriendsOnly,
                                     ["MapName"] = "Villain Dimension",
                                     ["Hardcore"] = false
                                 }
@@ -333,7 +333,7 @@ w:AddToggle(
                                 "CreateRoom",
                                 {
                                     ["Difficulty"] = "Hard",
-                                    ["FriendsOnly"] = _G.Settings.FriendsOnly,
+                                    ["FriendsOnly"] =  FriendsOnly,
                                     ["MapName"] = "Villain Dimension",
                                     ["Hardcore"] = false
                                 }
@@ -348,7 +348,7 @@ w:AddToggle(
                                 "CreateRoom",
                                 {
                                     ["Difficulty"] = "Nightmare",
-                                    ["FriendsOnly"] = _G.Settings.FriendsOnly,
+                                    ["FriendsOnly"] =  FriendsOnly,
                                     ["MapName"] = "Villain Dimension",
                                     ["Hardcore"] = false
                                 }
@@ -363,7 +363,7 @@ w:AddToggle(
                                 "CreateRoom",
                                 {
                                     ["Difficulty"] = "Easy",
-                                    ["FriendsOnly"] = _G.Settings.FriendsOnly,
+                                    ["FriendsOnly"] =  FriendsOnly,
                                     ["MapName"] = "Sword Dimension",
                                     ["Hardcore"] = false
                                 }
@@ -378,7 +378,7 @@ w:AddToggle(
                                 "CreateRoom",
                                 {
                                     ["Difficulty"] = "Nightmare",
-                                    ["FriendsOnly"] = _G.Settings.FriendsOnly,
+                                    ["FriendsOnly"] =  FriendsOnly,
                                     ["MapName"] = "Sword Dimension",
                                     ["Hardcore"] = false
                                 }
@@ -393,7 +393,7 @@ w:AddToggle(
                                 "CreateRoom",
                                 {
                                     ["Difficulty"] = "Easy",
-                                    ["FriendsOnly"] = _G.Settings.FriendsOnly,
+                                    ["FriendsOnly"] =  FriendsOnly,
                                     ["MapName"] = "Ghoul Dimension",
                                     ["Hardcore"] = false
                                 }
@@ -408,7 +408,7 @@ w:AddToggle(
                                 "CreateRoom",
                                 {
                                     ["Difficulty"] = "Nightmare",
-                                    ["FriendsOnly"] = _G.Settings.FriendsOnly,
+                                    ["FriendsOnly"] =  FriendsOnly,
                                     ["MapName"] = "Ghoul Dimension",
                                     ["Hardcore"] = false
                                 }
@@ -423,7 +423,7 @@ w:AddToggle(
                                 "CreateRoom",
                                 {
                                     ["Difficulty"] = "Easy",
-                                    ["FriendsOnly"] = _G.Settings.FriendsOnly,
+                                    ["FriendsOnly"] =  FriendsOnly,
                                     ["MapName"] = "Fate Dimension",
                                     ["Hardcore"] = false
                                 }
@@ -438,7 +438,7 @@ w:AddToggle(
                                 "CreateRoom",
                                 {
                                     ["Difficulty"] = "Nightmare",
-                                    ["FriendsOnly"] = _G.Settings.FriendsOnly,
+                                    ["FriendsOnly"] =  FriendsOnly,
                                     ["MapName"] = "Fate Dimension",
                                     ["Hardcore"] = false
                                 }
@@ -453,7 +453,7 @@ w:AddToggle(
                                 "CreateRoom",
                                 {
                                     ["Difficulty"] = "Easy",
-                                    ["FriendsOnly"] = _G.Settings.FriendsOnly,
+                                    ["FriendsOnly"] =  FriendsOnly,
                                     ["MapName"] = "Slime Dimension",
                                     ["Hardcore"] = false
                                 }
@@ -471,15 +471,15 @@ w:AddToggle(
 w:AddToggle(
     {
         Name = "🌀 Farm Time Challenge",
-        Default = _G.Settings.Autotrial,
+        Default =  Autotrial,
         Color = Color3.fromRGB(255,215,0),
         Callback = function(H)
-            _G.Settings.Autotrial = H
+             Autotrial = H
             saveSettings()
             task.spawn(
                 function()
                     while task.wait(7) do
-                        if not _G.Settings.Autotrial then
+                        if not  Autotrial then
                             break
                         end
                         game:GetService("ReplicatedStorage").RemoteFunctions.MainRemoteFunction:InvokeServer(
@@ -494,23 +494,23 @@ w:AddToggle(
 w:AddToggle(
     {
         Name = "🌀 Farm Specific Map",
-        Default = _G.Settings.Autocustom,
+        Default =  Autocustom,
         Color = Color3.fromRGB(255,215,0),
         Callback = function(H)
-            _G.Settings.Autocustom = H
+             Autocustom = H
             saveSettings()
             task.spawn(
                 function()
                     while task.wait(7) do
-                        if not _G.Settings.Autocustom then
+                        if not  Autocustom then
                             break
                         end
                         game:GetService("ReplicatedStorage").RemoteFunctions.MainRemoteFunction:InvokeServer(
                             "CreateRoom",
                             {
-                                ["Difficulty"] = _G.Settings.CustomDifficulty,
-                                ["FriendsOnly"] = _G.Settings.FriendsOnly,
-                                ["MapName"] = _G.Settings.custommapselect,
+                                ["Difficulty"] =  CustomDifficulty,
+                                ["FriendsOnly"] =  FriendsOnly,
+                                ["MapName"] =  custommapselect,
                                 ["Hardcore"] = false
                             }
                         )
@@ -526,15 +526,15 @@ w:AddToggle(
 w:AddToggle(
     {
         Name = "🌀 Farm Raid",
-        Default = _G.Settings.Autoraid,
+        Default =  Autoraid,
         Color = Color3.fromRGB(255,215,0),
         Callback = function(H)
-            _G.Settings.Autoraid = H
+             Autoraid = H
             saveSettings()
             task.spawn(
                 function()
                     while task.wait(3) do
-                        if not _G.Settings.Autoraid then
+                        if not  Autoraid then
                             break
                         end
                         game:GetService("ReplicatedStorage").RemoteFunctions.MainRemoteFunction:InvokeServer(
@@ -542,7 +542,7 @@ w:AddToggle(
                             {
                                 ["Difficulty"] = "Easy",
                                 ["FriendsOnly"] = true,
-                                ["MapName"] = _G.Settings.Raidselectmap,
+                                ["MapName"] =  Raidselectmap,
                                 ["Hardcore"] = false
                             }
                         )
@@ -558,15 +558,15 @@ w:AddToggle(
 F:AddToggle(
     {
         Name = "Farm Raid + AFK",
-        Default = _G.Settings.afkandraid,
+        Default =  afkandraid,
         Color = Color3.fromRGB(255,215,0),
         Callback = function(H)
-            _G.Settings.afkandraid = H
+             afkandraid = H
             saveSettings()
             task.spawn(
                 function()
                     while task.wait(3) do
-                        if not _G.Settings.afkandraid then
+                        if not  afkandraid then
                             break
                         end
                         spawn(
@@ -577,7 +577,7 @@ F:AddToggle(
                                         {
                                             ["Difficulty"] = "Easy",
                                             ["FriendsOnly"] = true,
-                                            ["MapName"] = _G.Settings.Raidselectmap,
+                                            ["MapName"] =  Raidselectmap,
                                             ["Hardcore"] = false
                                         }
                                     )
@@ -611,15 +611,15 @@ F:AddToggle(
 F:AddToggle(
     {
         Name = "Farm Raid Token",
-        Default = _G.Settings.farmraidtoken,
+        Default =  farmraidtoken,
         Color = Color3.fromRGB(255,215,0),
         Callback = function(H)
-            _G.Settings.farmraidtoken = H
+             farmraidtoken = H
             saveSettings()
             task.spawn(
                 function()
                     while task.wait(260) do
-                        if not _G.Settings.farmraidtoken then
+                        if not  farmraidtoken then
                             break
                         end
                         spawn(
@@ -653,15 +653,15 @@ F:AddLabel("If You Want Farm Gem Untoggle Farm Raid Token")
 w:AddToggle(
     {
         Name = "🌀 Farm Boss Rush",
-        Default = _G.Settings.Autoboss,
+        Default =  Autoboss,
         Color = Color3.fromRGB(255,215,0),
         Callback = function(H)
-            _G.Settings.Autoboss = H
+             Autoboss = H
             saveSettings()
             task.spawn(
                 function()
                     while task.wait(4) do
-                        if not _G.Settings.Autoboss then
+                        if not  Autoboss then
                             break
                         end
                         game:GetService("ReplicatedStorage").RemoteFunctions.MainRemoteFunction:InvokeServer(
@@ -677,15 +677,15 @@ w:AddToggle(
 w:AddToggle(
     {
         Name = "🌀 Farm Speed Raid (Auto Random Character)",
-        Default = _G.Settings.Autospeedraid,
+        Default =  Autospeedraid,
         Color = Color3.fromRGB(255,215,0),
         Callback = function(H)
-            _G.Settings.Autospeedraid = H
+             Autospeedraid = H
             saveSettings()
             task.spawn(
                 function()
                     while task.wait(2) do
-                        if not _G.Settings.Autospeedraid then
+                        if not  Autospeedraid then
                             break
                         end
                         wait()
@@ -758,15 +758,15 @@ w:AddToggle(
 A:AddToggle(
     {
         Name = "Auto Sell Common",
-        Default = _G.Settings.autosellcommon,
+        Default =  autosellcommon,
         Color = Color3.fromRGB(255,215,0),
         Callback = function(H)
-            _G.Settings.autosellcommon = H
+             autosellcommon = H
             saveSettings()
             task.spawn(
                 function()
                     while task.wait(1) do
-                        if not _G.Settings.autosellcommon then
+                        if not  autosellcommon then
                             break
                         end
                         wait()
@@ -801,15 +801,15 @@ A:AddToggle(
 A:AddToggle(
     {
         Name = "Auto Sell Uncommon",
-        Default = _G.Settings.autoselluncommon,
+        Default =  autoselluncommon,
         Color = Color3.fromRGB(255,215,0),
         Callback = function(H)
-            _G.Settings.autoselluncommon = H
+             autoselluncommon = H
             saveSettings()
             task.spawn(
                 function()
                     while task.wait(1) do
-                        if not _G.Settings.autoselluncommon then
+                        if not  autoselluncommon then
                             break
                         end
                         wait()
@@ -844,15 +844,15 @@ A:AddToggle(
 A:AddToggle(
     {
         Name = "Auto Sell Rare",
-        Default = _G.Settings.autosellrare,
+        Default =  autosellrare,
         Color = Color3.fromRGB(255,215,0),
         Callback = function(H)
-            _G.Settings.autosellrare = H
+             autosellrare = H
             saveSettings()
             task.spawn(
                 function()
                     while task.wait(1) do
-                        if not _G.Settings.autosellrare then
+                        if not  autosellrare then
                             break
                         end
                         wait()
@@ -887,15 +887,15 @@ A:AddToggle(
 A:AddToggle(
     {
         Name = "Auto Sell Epic",
-        Default = _G.Settings.autosellepic,
+        Default =  autosellepic,
         Color = Color3.fromRGB(255,215,0),
         Callback = function(H)
-            _G.Settings.autosellepic = H
+             autosellepic = H
             saveSettings()
             task.spawn(
                 function()
                     while task.wait(1) do
-                        if not _G.Settings.autosellepic then
+                        if not  autosellepic then
                             break
                         end
                         wait()
@@ -930,15 +930,15 @@ A:AddToggle(
 A:AddToggle(
     {
         Name = "Auto Sell Legendary",
-        Default = _G.Settings.autoselllegendary,
+        Default =  autoselllegendary,
         Color = Color3.fromRGB(255,215,0),
         Callback = function(H)
-            _G.Settings.autoselllegendary = H
+             autoselllegendary = H
             saveSettings()
             task.spawn(
                 function()
                     while task.wait(1) do
-                        if not _G.Settings.autoselllegendary then
+                        if not  autoselllegendary then
                             break
                         end
                         wait()
@@ -973,15 +973,15 @@ A:AddToggle(
 D:AddToggle(
     {
         Name = "TP onTop",
-        Default = _G.Settings.AutoTP,
+        Default =  AutoTP,
         Color = Color3.fromRGB(255,215,0),
         Callback = function(H)
-            _G.Settings.AutoTP = H
+             AutoTP = H
             saveSettings()
             task.spawn(
                 function()
                     while task.wait() do
-                        if not _G.Settings.AutoTP then
+                        if not  AutoTP then
                             break
                         end
                         pcall(
@@ -999,7 +999,7 @@ D:AddToggle(
                                             (n.Head.Position -
                                             game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude
                                         if T < 999 then
-                                            Speed2 = _G.Settings.Speed
+                                            Speed2 =  Speed
                                         end
                                         local U = game:service "TweenService"
                                         local V = TweenInfo.new(T / Speed2, Enum.EasingStyle.Linear)
@@ -1009,12 +1009,12 @@ D:AddToggle(
                                             V,
                                             {
                                                 CFrame = n.HumanoidRootPart.CFrame * CFrame.Angles(math.rad(-90), 0, 0) +
-                                                    Vector3.new(0, _G.Settings.Height, 0)
+                                                    Vector3.new(0,  Height, 0)
                                             }
                                         )
                                         W:Play()
                                         wait(T / Speed2)
-                                    until not _G.Settings.AutoTP or n.Humanoid.Health <= 0 or not n.Parent or not n
+                                    until not  AutoTP or n.Humanoid.Health <= 0 or not n.Parent or not n
                                 end
                             end
                         )
@@ -1027,15 +1027,15 @@ D:AddToggle(
 D:AddToggle(
     {
         Name = "TP Under",
-        Default = _G.Settings.AutoTP1,
+        Default =  AutoTP1,
         Color = Color3.fromRGB(255,215,0),
         Callback = function(H)
-            _G.Settings.AutoTP1 = H
+             AutoTP1 = H
             saveSettings()
             task.spawn(
                 function()
                     while task.wait() do
-                        if not _G.Settings.AutoTP1 then
+                        if not  AutoTP1 then
                             break
                         end
                         pcall(
@@ -1053,7 +1053,7 @@ D:AddToggle(
                                             (n.Head.Position -
                                             game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude
                                         if T < 999 then
-                                            Speed2 = _G.Settings.Speed
+                                            Speed2 =  Speed
                                         end
                                         local U = game:service "TweenService"
                                         local V = TweenInfo.new(T / Speed2, Enum.EasingStyle.Linear)
@@ -1063,12 +1063,12 @@ D:AddToggle(
                                             V,
                                             {
                                                 CFrame = n.HumanoidRootPart.CFrame * CFrame.Angles(math.rad(90), 0, 0) +
-                                                    Vector3.new(0, _G.Settings.Height1, 0)
+                                                    Vector3.new(0,  Height1, 0)
                                             }
                                         )
                                         W:Play()
                                         wait(T / Speed2)
-                                    until not _G.Settings.AutoTP1 or n.Humanoid.Health <= 0 or not n.Parent or not n
+                                    until not  AutoTP1 or n.Humanoid.Health <= 0 or not n.Parent or not n
                                 end
                             end
                         )
@@ -1081,15 +1081,15 @@ D:AddToggle(
 D:AddToggle(
     {
         Name = "TP Behind",
-        Default = _G.Settings.AutoTP2,
+        Default =  AutoTP2,
         Color = Color3.fromRGB(255,215,0),
         Callback = function(H)
-            _G.Settings.AutoTP2 = H
+             AutoTP2 = H
             saveSettings()
             task.spawn(
                 function()
                     while task.wait() do
-                        if not _G.Settings.AutoTP2 then
+                        if not  AutoTP2 then
                             break
                         end
                         pcall(
@@ -1101,11 +1101,11 @@ D:AddToggle(
                                             (n.HumanoidRootPart.Position -
                                             game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude
                                         if T < 999 then
-                                            Speed2 = _G.Settings.Speed
+                                            Speed2 =  Speed
                                         elseif T < 1000 then
-                                            Speed2 = _G.Settings.Speed
+                                            Speed2 =  Speed
                                         elseif T >= 1000 then
-                                            Speed2 = _G.Settings.Speed
+                                            Speed2 =  Speed
                                         end
                                         local U = game:service "TweenService"
                                         local V = TweenInfo.new(T / Speed2, Enum.EasingStyle.Linear)
@@ -1115,12 +1115,12 @@ D:AddToggle(
                                             V,
                                             {
                                                 CFrame = n.HumanoidRootPart.CFrame *
-                                                    CFrame.new(0, 0, _G.Settings.distance)
+                                                    CFrame.new(0, 0,  distance)
                                             }
                                         )
                                         W:Play()
                                         wait(T / Speed2)
-                                    until not _G.Settings.AutoTP2 or n.Humanoid.Health <= 0 or not n.Parent or not n
+                                    until not  AutoTP2 or n.Humanoid.Health <= 0 or not n.Parent or not n
                                 end
                             end
                         )
@@ -1131,46 +1131,46 @@ D:AddToggle(
     }
 )
 y:AddDropdown(
-    {Name = "Select Difficulty", Default = _G.Settings.CustomDifficulty, Options = r, Callback = function(H)
-            _G.Settings.CustomDifficulty = H
+    {Name = "Select Difficulty", Default =  CustomDifficulty, Options = r, Callback = function(H)
+             CustomDifficulty = H
             saveSettings()
         end}
 )
 B:AddDropdown(
-    {Name = "Select Capsule", Default = _G.Settings.selectegg, Options = s, Callback = function(H)
-            _G.Settings.selectegg = H
+    {Name = "Select Capsule", Default =  selectegg, Options = s, Callback = function(H)
+             selectegg = H
             saveSettings()
         end}
 )
 y:AddDropdown(
-    {Name = "Select Map", Default = _G.Settings.custommapselect, Options = q, Callback = function(H)
-            _G.Settings.custommapselect = H
+    {Name = "Select Map", Default =  custommapselect, Options = q, Callback = function(H)
+             custommapselect = H
             saveSettings()
         end}
 )
 y:AddDropdown(
-    {Name = "Select Raid", Default = _G.Settings.Raidselectmap, Options = t, Callback = function(H)
-            _G.Settings.Raidselectmap = H
+    {Name = "Select Raid", Default =  Raidselectmap, Options = t, Callback = function(H)
+             Raidselectmap = H
             saveSettings()
         end}
 )
 B:AddToggle(
     {
         Name = "Auto Capsule",
-        Default = _G.Settings.autospingem,
+        Default =  autospingem,
         Color = Color3.fromRGB(255,215,0),
         Callback = function(H)
-            _G.Settings.autospingem = H
+             autospingem = H
             saveSettings()
             task.spawn(
                 function()
-                    while task.wait(_G.Settings.eggspintime) do
-                        if not _G.Settings.autospingem then
+                    while task.wait( eggspintime) do
+                        if not  autospingem then
                             break
                         end
                         game:GetService("ReplicatedStorage").RemoteFunctions.MainRemoteFunction:InvokeServer(
                             "BuyEgg",
-                            _G.Settings.selectegg
+                             selectegg
                         )
                     end
                 end
@@ -1179,23 +1179,23 @@ B:AddToggle(
     }
 )
 z:AddTextbox(
-    {Name = "Webhook Url", Default = _G.Settings.webhookurl, TextDisappear = false, Callback = function(H)
-            _G.Settings.webhookurl = H
+    {Name = "Webhook Url", Default =  webhookurl, TextDisappear = false, Callback = function(H)
+             webhookurl = H
             saveSettings()
         end}
 )
 z:AddToggle(
     {
         Name = "Clear Notifier",
-        Default = _G.Settings.webhook,
+        Default =  webhook,
         Color = Color3.fromRGB(255,215,0),
         Callback = function(H)
-            _G.Settings.webhook = H
+             webhook = H
             saveSettings()
             task.spawn(
                 function()
-                    while task.wait(_G.Settings.webhookspeed) do
-                        if not _G.Settings.webhook then
+                    while task.wait( webhookspeed) do
+                        if not  webhook then
                             break
                         end
                         if
@@ -1207,7 +1207,7 @@ z:AddToggle(
                                 local request = http_request or request or HttpPost or syn.request
                                 request(
                                     {
-                                        Url = _G.Settings.webhookurl,
+                                        Url =  webhookurl,
                                         Method = "POST",
                                         Headers = {["Content-Type"] = "application/json"},
                                         Body = game:GetService("HttpService"):JSONEncode({embeds = {_}, content = a0})
@@ -1249,7 +1249,7 @@ z:AddToggle(
                                 },
                                 ["timestamp"] = DateTime.now():ToIsoDate()
                             }
-                            webhook(_, "<@" .. _G.Settings.dsuser .. ">" .. _G.Settings.otherds)
+                            webhook(_, "<@" ..  dsuser .. ">" ..  otherds)
                         end
                     end
                 end
@@ -1260,15 +1260,15 @@ z:AddToggle(
 z:AddToggle(
     {
         Name = "Raid Notifier",
-        Default = _G.Settings.raidwebhook,
+        Default =  raidwebhook,
         Color = Color3.fromRGB(255,215,0),
         Callback = function(H)
-            _G.Settings.raidwebhook = H
+             raidwebhook = H
             saveSettings()
             task.spawn(
                 function()
-                    while task.wait(_G.Settings.webhookspeed) do
-                        if not _G.Settings.raidwebhook then
+                    while task.wait( webhookspeed) do
+                        if not  raidwebhook then
                             break
                         end
                         if
@@ -1280,7 +1280,7 @@ z:AddToggle(
                                 local request = http_request or request or HttpPost or syn.request
                                 request(
                                     {
-                                        Url = _G.Settings.webhookurl,
+                                        Url =  webhookurl,
                                         Method = "POST",
                                         Headers = {["Content-Type"] = "application/json"},
                                         Body = game:GetService("HttpService"):JSONEncode({embeds = {_}, content = a0})
@@ -1322,7 +1322,7 @@ z:AddToggle(
                                 },
                                 ["timestamp"] = DateTime.now():ToIsoDate()
                             }
-                            webhook(_, "<@" .. _G.Settings.dsuser .. ">" .. _G.Settings.otherds)
+                            webhook(_, "<@" ..  dsuser .. ">" ..  otherds)
                         end
                     end
                 end
@@ -1333,15 +1333,15 @@ z:AddToggle(
 z:AddToggle(
     {
         Name = "Level Notifier",
-        Default = _G.Settings.levelwebhook,
+        Default =  levelwebhook,
         Color = Color3.fromRGB(255,215,0),
         Callback = function(H)
-            _G.Settings.levelwebhook = H
+             levelwebhook = H
             saveSettings()
             task.spawn(
                 function()
                     while task.wait(3) do
-                        if not _G.Settings.levelwebhook then
+                        if not  levelwebhook then
                             break
                         end
                         if
@@ -1353,7 +1353,7 @@ z:AddToggle(
                                 local request = http_request or request or HttpPost or syn.request
                                 request(
                                     {
-                                        Url = _G.Settings.webhookurl,
+                                        Url =  webhookurl,
                                         Method = "POST",
                                         Headers = {["Content-Type"] = "application/json"},
                                         Body = game:GetService("HttpService"):JSONEncode({embeds = {_}, content = a0})
@@ -1377,7 +1377,7 @@ z:AddToggle(
                                 },
                                 ["timestamp"] = DateTime.now():ToIsoDate()
                             }
-                            webhook(_, "<@" .. _G.Settings.dsuser .. ">" .. _G.Settings.otherds)
+                            webhook(_, "<@" ..  dsuser .. ">" ..  otherds)
                         end
                     end
                 end
@@ -1386,23 +1386,23 @@ z:AddToggle(
     }
 )
 y:AddToggle(
-    {Name = "Friends Only", Default = _G.Settings.FriendsOnly, Color = Color3.fromRGB(255,215,0), Callback = function(H)
-            _G.Settings.FriendsOnly = H
+    {Name = "Friends Only", Default =  FriendsOnly, Color = Color3.fromRGB(255,215,0), Callback = function(H)
+             FriendsOnly = H
             saveSettings()
         end}
 )
 x:AddToggle(
     {
         Name = "Hide Name",
-        Default = _G.Settings.Hidename,
+        Default =  Hidename,
         Color = Color3.fromRGB(255,215,0),
         Callback = function(H)
-            _G.Settings.Hidename = H
+             Hidename = H
             saveSettings()
             task.spawn(
                 function()
                     while task.wait(1) do
-                        if not _G.Settings.Hidename then
+                        if not  Hidename then
                             break
                         end
                         spawn(
@@ -1440,15 +1440,15 @@ x:AddToggle(
 x:AddToggle(
     {
         Name = "Rejoin If Kick",
-        Default = _G.Settings.kickrejoin,
+        Default =  kickrejoin,
         Color = Color3.fromRGB(255,215,0),
         Callback = function(H)
-            _G.Settings.kickrejoin = H
+             kickrejoin = H
             saveSettings()
             task.spawn(
                 function()
                     while task.wait(1) do
-                        if not _G.Settings.kickrejoin then
+                        if not  kickrejoin then
                             break
                         end
                         game:GetService("CoreGui").RobloxPromptGui.promptOverlay.ChildAdded:Connect(
@@ -1470,15 +1470,15 @@ x:AddToggle(
 C:AddToggle(
     {
         Name = "Daily Quest",
-        Default = _G.Settings.Autoclaimquest,
+        Default =  Autoclaimquest,
         Color = Color3.fromRGB(255,215,0),
         Callback = function(H)
-            _G.Settings.Autoclaimquest = H
+             Autoclaimquest = H
             saveSettings()
             task.spawn(
                 function()
                     while task.wait(1) do
-                        if not _G.Settings.Autoclaimquest then
+                        if not  Autoclaimquest then
                             break
                         end
                         game:GetService("ReplicatedStorage").RemoteFunctions.MainRemoteFunction:InvokeServer(
@@ -1518,15 +1518,15 @@ C:AddToggle(
 C:AddToggle(
     {
         Name = "Speed Raid Rewards",
-        Default = _G.Settings.autoclaimrewardspeed,
+        Default =  autoclaimrewardspeed,
         Color = Color3.fromRGB(255,215,0),
         Callback = function(H)
-            _G.Settings.autoclaimrewardspeed = H
+             autoclaimrewardspeed = H
             saveSettings()
             task.spawn(
                 function()
                     while task.wait(1) do
-                        if not _G.Settings.autoclaimrewardspeed then
+                        if not  autoclaimrewardspeed then
                             break
                         end
                         game:GetService("ReplicatedStorage").RemoteFunctions.MainRemoteFunction:InvokeServer(
@@ -1574,15 +1574,15 @@ C:AddToggle(
 C:AddToggle(
     {
         Name = "Daily Raid Ticket",
-        Default = _G.Settings.autoclaimrewardraid,
+        Default =  autoclaimrewardraid,
         Color = Color3.fromRGB(255,215,0),
         Callback = function(H)
-            _G.Settings.autoclaimrewardraid = H
+             autoclaimrewardraid = H
             saveSettings()
             task.spawn(
                 function()
                     while task.wait(1) do
-                        if not _G.Settings.autoclaimrewardraid then
+                        if not  autoclaimrewardraid then
                             break
                         end
                         game:GetService("ReplicatedStorage").RemoteFunctions.MainRemoteFunction:InvokeServer(
@@ -1596,23 +1596,23 @@ C:AddToggle(
 )
 E:AddLabel("Punch Setting")
 E:AddSlider(
-    {Name = "Punch Delay", Default = _G.Settings.punchdelay, Min = 1, Max = 5, Color = Color3.fromRGB(255,215,0), Callback = function(H)
-            _G.Settings.punchdelay = H
+    {Name = "Punch Delay", Default =  punchdelay, Min = 1, Max = 5, Color = Color3.fromRGB(255,215,0), Callback = function(H)
+             punchdelay = H
             saveSettings()
         end}
 )
 E:AddToggle(
     {
         Name = "Auto Punch",
-        Default = _G.Settings.AutoPunch,
+        Default =  AutoPunch,
         Color = Color3.fromRGB(255,215,0),
         Callback = function(H)
-            _G.Settings.AutoPunch = H
+             AutoPunch = H
             saveSettings()
             task.spawn(
                 function()
-                    while task.wait(_G.Settings.punchdelay) do
-                        if not _G.Settings.AutoPunch then
+                    while task.wait( punchdelay) do
+                        if not  AutoPunch then
                             break
                         end
                         game:GetService("ReplicatedStorage").RemoteEvents.MainRemoteEvent:FireServer("UseSkill",{ ["attackNumber"] = 1},"BasicAttack")
@@ -1628,15 +1628,15 @@ E:AddLabel("Skill Setting")
 E:AddToggle(
     {
         Name = "skill 1",
-        Default = _G.Settings.AutoSkill1,
+        Default =  AutoSkill1,
         Color = Color3.fromRGB(255,215,0),
         Callback = function(H)
-            _G.Settings.AutoSkill1 = H
+             AutoSkill1 = H
             saveSettings()
             task.spawn(
                 function()
-                    while task.wait(_G.Settings.skilldelay) do
-                        if not _G.Settings.AutoSkill1 then
+                    while task.wait( skilldelay) do
+                        if not  AutoSkill1 then
                             break
                         end
                         for m, n in pairs(
@@ -1655,15 +1655,15 @@ E:AddToggle(
 E:AddToggle(
     {
         Name = "skill 2",
-        Default = _G.Settings.AutoSkill2,
+        Default =  AutoSkill2,
         Color = Color3.fromRGB(255,215,0),
         Callback = function(H)
-            _G.Settings.AutoSkill2 = H
+             AutoSkill2 = H
             saveSettings()
             task.spawn(
                 function()
-                    while task.wait(_G.Settings.skilldelay) do
-                        if not _G.Settings.AutoSkill2 then
+                    while task.wait( skilldelay) do
+                        if not  AutoSkill2 then
                             break
                         end
                         for m, n in pairs(
@@ -1682,15 +1682,15 @@ E:AddToggle(
 E:AddToggle(
     {
         Name = "skill 3",
-        Default = _G.Settings.AutoSkill3,
+        Default =  AutoSkill3,
         Color = Color3.fromRGB(255,215,0),
         Callback = function(H)
-            _G.Settings.AutoSkill3 = H
+             AutoSkill3 = H
             saveSettings()
             task.spawn(
                 function()
-                    while task.wait(_G.Settings.skilldelay) do
-                        if not _G.Settings.AutoSkill3 then
+                    while task.wait( skilldelay) do
+                        if not  AutoSkill3 then
                             break
                         end
                         for m, n in pairs(
@@ -1709,15 +1709,15 @@ E:AddToggle(
 E:AddToggle(
     {
         Name = "skill 4",
-        Default = _G.Settings.AutoSkill4,
+        Default =  AutoSkill4,
         Color = Color3.fromRGB(255,215,0),
         Callback = function(H)
-            _G.Settings.AutoSkill4 = H
+             AutoSkill4 = H
             saveSettings()
             task.spawn(
                 function()
-                    while task.wait(_G.Settings.skilldelay) do
-                        if not _G.Settings.AutoSkill4 then
+                    while task.wait( skilldelay) do
+                        if not  AutoSkill4 then
                             break
                         end
                         for m, n in pairs(
@@ -1736,15 +1736,15 @@ E:AddToggle(
 E:AddToggle(
     {
         Name = "skill 5 (awaken units)",
-        Default = _G.Settings.AutoSkill5,
+        Default =  AutoSkill5,
         Color = Color3.fromRGB(255,215,0),
         Callback = function(H)
-            _G.Settings.AutoSkill5 = H
+             AutoSkill5 = H
             saveSettings()
             task.spawn(
                 function()
-                    while task.wait(_G.Settings.skilldelay) do
-                        if not _G.Settings.AutoSkill5 then
+                    while task.wait( skilldelay) do
+                        if not  AutoSkill5 then
                             break
                         end
                         for m, n in pairs(
@@ -1763,15 +1763,15 @@ E:AddToggle(
 E:AddToggle(
     {
         Name = "skill Fruit",
-        Default = _G.Settings.AutoSkillFruit,
+        Default =  AutoSkillFruit,
         Color = Color3.fromRGB(255,215,0),
         Callback = function(H)
-            _G.Settings.AutoSkillFruit = H
+             AutoSkillFruit = H
             saveSettings()
             task.spawn(
                 function()
-                    while task.wait(_G.Settings.skilldelay) do
-                        if not _G.Settings.AutoSkillFruit then
+                    while task.wait( skilldelay) do
+                        if not  AutoSkillFruit then
                             break
                         end
                         game:service('VirtualInputManager'):SendKeyEvent(true, "Z", false, game)
@@ -1785,15 +1785,15 @@ E:AddToggle(
 E:AddToggle(
     {
         Name = "Assist 1",
-        Default = _G.Settings.AutoSkill5,
+        Default =  AutoSkill5,
         Color = Color3.fromRGB(255,215,0),
         Callback = function(H)
-            _G.Settings.AutoSkill5 = H
+             AutoSkill5 = H
             saveSettings()
             task.spawn(
                 function()
-                    while task.wait(_G.Settings.skilldelay) do
-                        if not _G.Settings.AutoSkill5 then
+                    while task.wait( skilldelay) do
+                        if not  AutoSkill5 then
                             break
                         end
                         for m, n in pairs(
@@ -1812,15 +1812,15 @@ E:AddToggle(
 E:AddToggle(
     {
         Name = "Assist 2",
-        Default = _G.Settings.AutoSkill6,
+        Default =  AutoSkill6,
         Color = Color3.fromRGB(255,215,0),
         Callback = function(H)
-            _G.Settings.AutoSkill6 = H
+             AutoSkill6 = H
             saveSettings()
             task.spawn(
                 function()
-                    while task.wait(_G.Settings.skilldelay) do
-                        if not _G.Settings.AutoSkill6 then
+                    while task.wait( skilldelay) do
+                        if not  AutoSkill6 then
                             break
                         end
                         for m, n in pairs(
@@ -1839,53 +1839,53 @@ E:AddToggle(
 
 
 E:AddSlider(
-    {Name = "Skill Delay", Default = _G.Settings.skilldelay, Min = 1, Max = 5, Color = Color3.fromRGB(255,215,0), Callback = function(H)
-            _G.Settings.skilldelay = H
+    {Name = "Skill Delay", Default =  skilldelay, Min = 1, Max = 5, Color = Color3.fromRGB(255,215,0), Callback = function(H)
+             skilldelay = H
             saveSettings()
         end}
 )
 E:AddLabel("Get exploit detected put more delay")
 E:AddLabel("Reccomend 1 delay no detected")
 B:AddSlider(
-    {Name = "Spin Delay", Default = _G.Settings.eggspintime, Min = 0, Max = 10, Color = Color3.fromRGB(255,215,0), Callback = function(H)
-            _G.Settings.eggspintime = H
+    {Name = "Spin Delay", Default =  eggspintime, Min = 0, Max = 10, Color = Color3.fromRGB(255,215,0), Callback = function(H)
+             eggspintime = H
             saveSettings()
         end}
 )
 D:AddSlider(
-    {Name = "Speed", Default = _G.Settings.Speed, Min = 80, Max = 100, Color = Color3.fromRGB(255,215,0), Callback = function(H)
-            _G.Settings.Speed = H
+    {Name = "Speed", Default =  Speed, Min = 80, Max = 100, Color = Color3.fromRGB(255,215,0), Callback = function(H)
+             Speed = H
             saveSettings()
         end}
 )
 D:AddSlider(
-    {Name = "Over Height", Default = _G.Settings.Height, Min = 5, Max = 10, Color = Color3.fromRGB(255,215,0), Callback = function(H)
-            _G.Settings.Height = H
+    {Name = "Over Height", Default =  Height, Min = 5, Max = 10, Color = Color3.fromRGB(255,215,0), Callback = function(H)
+             Height = H
             saveSettings()
         end}
 )
 D:AddSlider(
-    {Name = "Under Height", Default = _G.Settings.Height1, Min = -15, Max = -10, Color = Color3.fromRGB(255,215,0), Callback = function(H)
-            _G.Settings.Height1 = H
+    {Name = "Under Height", Default =  Height1, Min = -15, Max = -10, Color = Color3.fromRGB(255,215,0), Callback = function(H)
+             Height1 = H
             saveSettings()
         end}
 )
 D:AddSlider(
-    {Name = "Behind Distance", Default = _G.Settings.distance, Min = 0, Max = 20, Color = Color3.fromRGB(255,215,0), Callback = function(H)
-            _G.Settings.distance = H
+    {Name = "Behind Distance", Default =  distance, Min = 0, Max = 20, Color = Color3.fromRGB(255,215,0), Callback = function(H)
+             distance = H
             saveSettings()
         end}
 )
 z:AddSlider(
-    {Name = "Send Delay", Default = _G.Settings.webhookspeed, Min = 10, Max = 10, Color = Color3.fromRGB(255,215,0), Callback = function(H)
-            _G.Settings.webhookspeed = H
+    {Name = "Send Delay", Default =  webhookspeed, Min = 10, Max = 10, Color = Color3.fromRGB(255,215,0), Callback = function(H)
+             webhookspeed = H
             saveSettings()
         end}
 )
 
 z:AddTextbox(
-    {Name = "Put Your ID", Default = _G.Settings.dsuser, TextDisappear = false, Callback = function(H)
-            _G.Settings.dsuser = H
+    {Name = "Put Your ID", Default =  dsuser, TextDisappear = false, Callback = function(H)
+             dsuser = H
             saveSettings()
         end}
 )
@@ -1893,10 +1893,10 @@ D:AddLabel("select behind recommend")
 z:AddTextbox(
     {
         Name = "Put @here or @everyone ",
-        Default = _G.Settings.otherds,
+        Default =  otherds,
         TextDisappear = false,
         Callback = function(H)
-            _G.Settings.otherds = H
+             otherds = H
             saveSettings()
         end
     }
@@ -1916,8 +1916,8 @@ G:AddButton(
         end}
 )
 G:AddTextbox(
-    {Name = "Toggle Gui Key", Default = _G.Settings.toggleguikey, TextDisappear = false, Callback = function(H)
-            _G.Settings.toggleguikey = H
+    {Name = "Toggle Gui Key", Default =  toggleguikey, TextDisappear = false, Callback = function(H)
+             toggleguikey = H
             saveSettings()
         end}
 )
