@@ -1725,7 +1725,7 @@ E:AddToggle(
                         if not _G.Settings.AutoSkill4 then
                             break
                         end
-                        game:service('VirtualInputManager'):SendKeyEvent(true, "4", false, game)
+game:service('VirtualInputManager'):SendKeyEvent(true, "Z", false, game)
                     end
                 end
             )
@@ -1746,7 +1746,13 @@ E:AddToggle(
                         if not _G.Settings.AutoSkill5 then
                             break
                         end
-                        game:service('VirtualInputManager'):SendKeyEvent(true, "5", false, game)
+                        for m, n in pairs(
+                            getconnections(
+                                game.Players.LocalPlayer.PlayerGui.UniversalGui.UniversalCenterUIFrame.SlotsHolder.Skill5.MouseButton1Click
+                            )
+                        ) do
+                            n:Fire()
+                        end
                     end
                 end
             )
@@ -1789,7 +1795,13 @@ E:AddToggle(
                         if not _G.Settings.AutoSkill5 then
                             break
                         end
-                        game:service('VirtualInputManager'):SendKeyEvent(true, "E", false, game)
+                        for m, n in pairs(
+                            getconnections(
+                                game.Players.LocalPlayer.PlayerGui.UniversalGui.UniversalCenterUIFrame.SlotsHolder.SkillAssist1.MouseButton1Click
+                            )
+                        ) do
+                            n:Fire()
+                        end
                     end
                 end
             )
@@ -1810,7 +1822,13 @@ E:AddToggle(
                         if not _G.Settings.AutoSkill6 then
                             break
                         end
-                        game:service('VirtualInputManager'):SendKeyEvent(true, "R", false, game)
+                        for m, n in pairs(
+                            getconnections(
+                                game.Players.LocalPlayer.PlayerGui.UniversalGui.UniversalCenterUIFrame.SlotsHolder.SkillAssist2.MouseButton1Click
+                            )
+                        ) do
+                            n:Fire()
+                        end
                     end
                 end
             )
@@ -1840,7 +1858,7 @@ D:AddSlider(
         end}
 )
 D:AddSlider(
-    {Name = "Over Height", Default = _G.Settings.Height, Min = 5, Max = 10, Color = Color3.fromRGB(255,215,0), Callback = function(H)
+    {Name = "Over Height", Default = _G.Settings.Height, Min = 3, Max = 10, Color = Color3.fromRGB(255,215,0), Callback = function(H)
             _G.Settings.Height = H
             saveSettings()
         end}
@@ -1852,7 +1870,7 @@ D:AddSlider(
         end}
 )
 D:AddSlider(
-    {Name = "Behind Distance", Default = _G.Settings.distance, Min = 0, Max = 20, Color = Color3.fromRGB(255,215,0), Callback = function(H)
+    {Name = "Behind Distance", Default = _G.Settings.distance, Min = -5, Max = 20, Color = Color3.fromRGB(255,215,0), Callback = function(H)
             _G.Settings.distance = H
             saveSettings()
         end}
