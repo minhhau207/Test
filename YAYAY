@@ -1971,8 +1971,12 @@ spawn(function()
                     BodyVelocity.Velocity = Vector3.new(0, 0, 0)
             for _, v in pairs(game.Players.LocalPlayer.Character:GetDescendants()) do
                 if v:IsA("BasePart") then
+                    if v.Material ~= Enum.Material.Neon then
+                        
+            
                     v.CanCollide = false    
                 end
+            end
             end
 
     elseif game.Players.LocalPlayer.Character.HumanoidRootPart:FindFirstChild("BodyVelocity1") then
