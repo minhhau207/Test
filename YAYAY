@@ -1,6 +1,5 @@
 _G.Settings = {
 
-	Autolvl = false,
     FriendOnly = false,
     Autotrial = false,
     Autocustom = false,
