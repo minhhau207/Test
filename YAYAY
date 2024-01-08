@@ -1863,7 +1863,7 @@ E:AddToggle(
 
 
 E:AddSlider(
-    {Name = "Skill Delay", Default = _G.Settings.skilldelay, Min = 0.35, Max = 0.35, Color = Color3.fromRGB(255,215,0), Callback = function(H)
+    {Name = "Skill Delay", Default = _G.Settings.skilldelay, Min = 0.35, Max = 1, Color = Color3.fromRGB(255,215,0), Callback = function(H)
             _G.Settings.skilldelay = H
             saveSettings()
         end}
