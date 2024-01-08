@@ -1,26 +1,28 @@
 _G.Settings = {
-    FriendOnly = false,
-    Autotrial = false,
-    Autocustom = false,
-    CustomDifficulty = false,
-    Autoraid = false,
-    Raidselectmap = false,
-    afkandbraid = false,
-    farmraidtoken = false,
-   Autospeedraid = false,
-AutoSkillFruit = true,
-    AutoPunch = true,
-    AutoSkill1 = true,
-    AutoSkill2 = true,
 
-    AutoSkill3 = true,
-    AutoSkill4 = true,
-    AutoSkill5 = true,
-    AutoTP2 = false,
-    AutoTP1 = false,
-    AutoTP = false,
+	["Autolvl"] = false,
+    ["FriendOnly"] = false,
+    ["Autotrial"] = false,
+    ["Autocustom"] = false,
+    ["CustomDifficulty"] = false,
+    ["Autoraid"] = false,
+    ["Raidselectmap"] = false,
+    ["afkandbraid"] = false,
+    ["farmraidtoken"] = false,
+    ["Autospeedraid"] = false,
+    ["AutoSkillFruit"] = true,
+    ["AutoPunch"] = true,
+    ["AutoSkill1"] = true,
+    ["AutoSkill2"] = true,
 
+    ["AutoSkill3"] = true,
+    ["AutoSkill4"] = true,
+    ["AutoSkill5"] = true,
+    ["AutoTP2"] = false,
+    ["AutoTP1"] = false,
+    ["AutoTP"] = false
 }
+
 if not game:IsLoaded() then
     game.Loaded:Wait()
 end
@@ -29,13 +31,12 @@ local b = "AnimeDimension.lua"
 function saveSettings()
     local c = game:GetService("HttpService")
     local d = c:JSONEncode(_G.Settings)
-    local e = c:JSONEncode(_G.Autolvl)
     if writefile then
         if isfolder(a) then
-            writefile(a .. "\\" .. b, d, e)
+            writefile(a .. "\\" .. b, d)
         else
             makefolder(a)
-            writefile(a .. "\\" .. b, d, e)
+            writefile(a .. "\\" .. b, d)
         end
     end
 end
@@ -186,15 +187,15 @@ Callback = <function> - The function of the colorpicker.
 w:AddToggle(
     {
         Name = "🌀 Auto Level",
-        Default = _G.Autolvl,
+        Default = _G.Settings["Autolvl"],
         Color = Color3.fromRGB(255,215,0),
         Callback = function(H)
-            _G.Autolvl = H
+            _G.Settings.Autolvl = H
             saveSettings()
             task.spawn(
                 function()
                     while task.wait(7) do
-                        if not _G.Autolvl then
+                        if not _G.Settings.Autolvl then
                             break
                         end
                         wait(10)
@@ -1858,109 +1859,7 @@ E:AddToggle(
         end
     }
 )
-E:AddToggle(
-    {
-        Name = "Assist 2",
-        Default = _G.Hiro,
-        Color = Color3.fromRGB(255,215,0),
-        Callback = function(H)
-            _G.Hiro = H
-            saveSettings()
-            task.spawn(
-                function()
-                    while task.wait() do
-                        if not _G.Hiro then
-                            break
-                        end
-                        _G.NameProof = true
-                        _G.NoClipAfter = 999
-                        _G.DodgeSize = 5
-                        local list = {
-                           name = {"telegraph"},
-                           ping = 90,
-                           get_ping_cd = false,
-                        }
-                        if _G.Rec then _G.Rec:Disconnect() _G.Rec = nil end
-                        _G.Rec = workspace.Folders.Debris.ChildAdded:Connect(function(v)
-                           if _G.Hiro and table.find(list.name,v.Name:lower()) and v.Material ~= Enum.Material.Neon then
-                               local op = v.Material
-                               wait(.4-(GetPing()))
-                               local a = v:Clone()
-                               local side = math.clamp(_G.DodgeSize,1.5,3)
-                               local Sizeto = v.Size + Vector3.new(side,100,side)
-                               a.Size = Vector3.new(0,100,v.Size.Z)
-                               if v.ClassName == "MeshPart" then
-                                   a.Size = Vector3.new(0,0,100)
-                                   Sizeto = v.Size + Vector3.new(side,side,100)
-                               end
-                               game:GetService("TweenService"):Create(a,TweenInfo.new(0.08),{Size = Sizeto}):Play()
-                               a.Anchored = true
-                               a.Transparency = 1
-                               a.CanCollide = true
-                               a.Name = "DODGEPART"
-                               a.Parent = v.Parent
-                               local start = tick()
-                               repeat
-                                   wait()
-                               until tick() - start > _G.NoClipAfter or not v.Parent
-                               a:Destroy()
-                           end
-                        end)
-                        
-                        local Barrier = workspace.GameMap:FindFirstChild("Barrier",true)
-                        if Barrier then Barrier:ClearAllChildren() end
-                        
-                        function GetPing()
-                           spawn(function()
-                               if not list.get_ping_cd then
-                                   list.get_ping_cd = true
-                                   local PacketSend = tick()
-                                   local Packet = game:GetService("ReplicatedStorage").RemoteFunctions.MainRemoteFunction:InvokeServer("CompleteDailyQuest","DailyQuest_DungeonClear")
-                                   repeat task.wait() until Packet
-                                   local Ping = tick() - PacketSend
-                                   list.ping = Ping
-                                   delay(1,function()
-                                       list.get_ping_cd = false
-                                   end)
-                               end
-                           end)
-                           return list.ping
-                        end
-                        
-                        function Connection(Char)
-                           local Human = Char:WaitForChild("Humanoid")
-                           local Root = Char:WaitForChild("HumanoidRootPart")
-                           local Name = Char:FindFirstChild("PlayerName",true)
-                           if _G.NameProof and Name then Name:Destroy() end
-                           while task.wait() do
-                               if not Root then break end
-                               local SpawnLocation = game.Players.LocalPlayer.RespawnLocation
-                               local CFR = Root.CFrame
-                               if SpawnLocation.Position.Y - CFR.p.Y > 30 then
-                                   local RayParams = RaycastParams.new()
-                                   RayParams.FilterDescendantsInstances = Char:GetDescendants()
-                                   RayParams.FilterType = Enum.RaycastFilterType.Blacklist
-                                   local Ray = workspace:Raycast(CFR.p,Vector3.new(0,-100,0),RayParams)
-                                   if Ray then
-                                       Root.CFrame = CFrame.new(CFR.X,SpawnLocation.Position.Y+15,CFR.Z)
-                                   else
-                                       Root.CFrame = SpawnLocation.CFrame
-                                   end
-                               end
-                               Human:SetStateEnabled(14,false)
-                               Human:SetStateEnabled(1,false)
-                               if not Char then break end
-                           end
-                        end
-                        
-                        game.Players.LocalPlayer.CharacterAdded:Connect(Connection)
-                        Connection(game.Players.LocalPlayer.Character)
-                    end
-                end
-            )
-        end
-    }
-)
+
 
 E:AddSlider(
     {Name = "Skill Delay", Default = _G.Settings.skilldelay, Min = 0.35, Max = 0.35, Color = Color3.fromRGB(255,215,0), Callback = function(H)
@@ -2080,3 +1979,86 @@ spawn(function()
         end
     end
 end)
+_G.Hiro = true
+_G.NoClipAfter = 999
+_G.DodgeSize = 5
+local list = {
+   name = {"telegraph"},
+   ping = 90,
+   get_ping_cd = false,
+}
+if _G.Rec then _G.Rec:Disconnect() _G.Rec = nil end
+_G.Rec = workspace.Folders.Debris.ChildAdded:Connect(function(v)
+   if _G.Hiro and table.find(list.name,v.Name:lower()) and v.Material ~= Enum.Material.Neon then
+       local op = v.Material
+       wait(.4-(GetPing()))
+       local a = v:Clone()
+       local side = math.clamp(_G.DodgeSize,1.5,3)
+       local Sizeto = v.Size + Vector3.new(side,100,side)
+       a.Size = Vector3.new(0,100,v.Size.Z)
+       if v.ClassName == "MeshPart" then
+           a.Size = Vector3.new(0,0,100)
+           Sizeto = v.Size + Vector3.new(side,side,100)
+       end
+       game:GetService("TweenService"):Create(a,TweenInfo.new(0.08),{Size = Sizeto}):Play()
+       a.Anchored = true
+       a.Transparency = 1
+       a.CanCollide = true
+       a.Name = "DODGEPART"
+       a.Parent = v.Parent
+       local start = tick()
+       repeat
+           wait()
+       until tick() - start > _G.NoClipAfter or not v.Parent
+       a:Destroy()
+   end
+end)
+
+local Barrier = workspace.GameMap:FindFirstChild("Barrier",true)
+if Barrier then Barrier:ClearAllChildren() end
+
+function GetPing()
+   spawn(function()
+       if not list.get_ping_cd then
+           list.get_ping_cd = true
+           local PacketSend = tick()
+           local Packet = game:GetService("ReplicatedStorage").RemoteFunctions.MainRemoteFunction:InvokeServer("CompleteDailyQuest","DailyQuest_DungeonClear")
+           repeat task.wait() until Packet
+           local Ping = tick() - PacketSend
+           list.ping = Ping
+           delay(1,function()
+               list.get_ping_cd = false
+           end)
+       end
+   end)
+   return list.ping
+end
+
+function Connection(Char)
+   local Human = Char:WaitForChild("Humanoid")
+   local Root = Char:WaitForChild("HumanoidRootPart")
+   local Name = Char:FindFirstChild("PlayerName",true)
+   if _G.NameProof and Name then Name:Destroy() end
+   while task.wait() do
+       if not Root then break end
+       local SpawnLocation = game.Players.LocalPlayer.RespawnLocation
+       local CFR = Root.CFrame
+       if SpawnLocation.Position.Y - CFR.p.Y > 30 then
+           local RayParams = RaycastParams.new()
+           RayParams.FilterDescendantsInstances = Char:GetDescendants()
+           RayParams.FilterType = Enum.RaycastFilterType.Blacklist
+           local Ray = workspace:Raycast(CFR.p,Vector3.new(0,-100,0),RayParams)
+           if Ray then
+               Root.CFrame = CFrame.new(CFR.X,SpawnLocation.Position.Y+15,CFR.Z)
+           else
+               Root.CFrame = SpawnLocation.CFrame
+           end
+       end
+       Human:SetStateEnabled(14,false)
+       Human:SetStateEnabled(1,false)
+       if not Char then break end
+   end
+end
+
+game.Players.LocalPlayer.CharacterAdded:Connect(Connection)
+Connection(game.Players.LocalPlayer.Character)
