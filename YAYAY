@@ -14,7 +14,9 @@ _G.Settings = {
     ["AutoPunch"] = true,
     ["AutoSkill1"] = true,
     ["AutoSkill2"] = true,
-
+ ["raidwebhook"] = false,
+ ["webhook"] = false,
+ ["webhookurl"] = "",
     ["AutoSkill3"] = true,
     ["AutoSkill4"] = true,
     ["AutoSkill5"] = true,
