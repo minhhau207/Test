@@ -1,6 +1,6 @@
 _G.Settings = {
 
-	["Autolvl"] = false,
+	Autolvl = false,
     FriendOnly = false,
     Autotrial = false,
     Autocustom = false,
@@ -187,7 +187,7 @@ Callback = <function> - The function of the colorpicker.
 w:AddToggle(
     {
         Name = "🌀 Auto Level",
-        Default = _G.Settings["Autolvl"],
+        Default = _G.Settings.Autolvl,
         Color = Color3.fromRGB(255,215,0),
         Callback = function(H)
             _G.Settings.Autolvl = H
