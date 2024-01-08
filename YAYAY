@@ -1,5 +1,7 @@
 _G.Settings = {
-
+Main = {
+    ["Autolvl"] = false
+},
     FriendOnly = false,
     Autotrial = false,
     Autocustom = false,
@@ -20,8 +22,8 @@ AutoSkillFruit = true,
     AutoTP2 = false,
     AutoTP1 = false,
     AutoTP = false,
-}
 
+}
 if not game:IsLoaded() then
     game.Loaded:Wait()
 end
@@ -186,15 +188,15 @@ Callback = <function> - The function of the colorpicker.
 w:AddToggle(
     {
         Name = "🌀 Auto Level",
-        Default = _G.Settings.Autolvl,
+        Default = _G.Settings.Main["Autolvl"],
         Color = Color3.fromRGB(255,215,0),
         Callback = function(H)
-            _G.Settings.Autolvl = H
+            _G.Settings.Main["Autolvl"] = H
             saveSettings()
             task.spawn(
                 function()
                     while task.wait(7) do
-                        if not _G.Settings.Autolvl then
+                        if not _G.Settings.Main["Autolvl"] then
                             break
                         end
                         wait(10)
