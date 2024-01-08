@@ -20,7 +20,7 @@ AutoSkillFruit = true,
     AutoSkill5 = true,
     AutoTP2 = false,
     AutoTP1 = false,
-    AutoTP = false
+    AutoTP = false,
 }
 
 if not game:IsLoaded() then
