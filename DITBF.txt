@@ -1,7 +1,7 @@
 getgenv().DitBF = {
     ["Performance"] = {
-        ["Hide Map"] = false,
-        ["Black Screen"] = false,
+        ["Hide Map"] = true,
+        ["Black Screen"] = true,
         ["Lock FPS"] = 45,
     },
     ["Fast Attack Duration/Cooldown"] = {5, 3},
