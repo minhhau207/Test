@@ -12,7 +12,7 @@ getgenv().DitBF = {
     ["Extra time Farm until unlock skills"] = true,
     ["Hop Server"] = {
         ["Type"] = {
-            ["[Main] Server Hop"] = false,
+            ["[Main] Server Hop"] = true,
             ["[Farm] Server Hop if Player nearby"] = false,
             ["[Sea 3 Quest] Server Hop for 1M+ Blox Fruit"] = true,
         },
@@ -25,7 +25,7 @@ getgenv().DitBF = {
         ["Get Hallow Scythe"] = true,
         ["Get Cursed Dual Katana"] = true,
         ["Get Soul Guitar"] = true,
-        ["Awake Current Blox Fruit"] = false,
+        ["Awake Current Blox Fruit"] = true,
         ["Get Mirror Fractal"] = true,
     },
     ["Buy Haki"] = {
@@ -35,10 +35,10 @@ getgenv().DitBF = {
         ["Observation"] = false,
         ["Legendary Enhancement"] = false,
     },
-    ["Auto Race"] = "None",
-    ["Blox Fruit Sniper"] = {},
-    ["Main Blox Fruit"] = {},
-    ["Eat Sniper Blox Fruits"] = true,
+    ["Auto Race"] = "Human",
+    ["Blox Fruit Sniper"] = {"Kitsune-Kitsune","T-Rex-T-Rex"},
+    ["Main Blox Fruit"] = {"Magma-Magma"},
+    ["Eat Sniper Blox Fruits"] = false,
     ["Account Panel"] = {
         ["Enable"] = false,
         ["Delay"] = 300,
