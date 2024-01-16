@@ -37,7 +37,7 @@ getgenv().DitBF = {
     },
     ["Auto Race"] = "Human",
     ["Blox Fruit Sniper"] = {"Kitsune-Kitsune","T-Rex-T-Rex","Dough-Dough","Sound-Sound","Dragon-Dragon","Leopard-Leopard","Spirit-Spirit","Mammoth-Mammoth",},
-    ["Main Blox Fruit"] = {"Dragon-Dragon"},
+    ["Main Blox Fruit"] = {},
     ["Eat Sniper Blox Fruits"] = false,
     ["Account Panel"] = {
         ["Enable"] = false,
