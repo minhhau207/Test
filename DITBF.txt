@@ -36,7 +36,7 @@ getgenv().DitBF = {
         ["Legendary Enhancement"] = false,
     },
     ["Auto Race"] = "Human",
-    ["Blox Fruit Sniper"] = {"Kitsune-Kitsune","T-Rex-T-Rex","Dough-Dough","Sound-Sound","Dragon-Dragon"},
+    ["Blox Fruit Sniper"] = {"Kitsune-Kitsune","T-Rex-T-Rex","Dough-Dough","Sound-Sound","Dragon-Dragon","Leopard-Leopard","Spirit-Spirit","Mammoth-Mammoth",},
     ["Main Blox Fruit"] = {"Magma-Magma"},
     ["Eat Sniper Blox Fruits"] = false,
     ["Account Panel"] = {
