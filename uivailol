@@ -3476,7 +3476,7 @@ if not game:GetService("CoreGui"):FindFirstChild("Credit") then
 	TexT.TextColor3 = Color3.fromRGB(255, 0, 4);
 	TexT.TextScaled = true;
 	TexT.TextWrapped = true;
-    loadstring(game:HttpGet(""))();
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/minhhau207/Test/main/noti"))();
     wait()
     Notification(1, "Silver Hub", "Executed!", 10);
 end
