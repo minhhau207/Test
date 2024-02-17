@@ -58,7 +58,7 @@ local b = {
     ["Text Color"] = Color3.fromRGB(70, 70, 70),
     ["Placeholder Text Color"] = Color3.fromRGB(100, 100, 100),
     ["Title Text Color"] = Color3.fromRGB(142, 172, 255),
-    ["Background Main Color"] = Color3.fromRGB(255, 255, 255),
+    ["Background Main Color"] = Color3.fromRGB(192, 192, 192),
     ["Background 1 Color"] = Color3.fromRGB(220, 220, 220),
     ["Background 1 Transparency"] = 0,
     ["Background 2 Color"] = Color3.fromRGB(200, 200, 200),
@@ -4743,6 +4743,7 @@ Section11.CreateButton({Title = 'Copy Get Key Link'}, function()
     }) 
 end)
 -- Validation ( Regular Key )
+if isfile(""SIlver/key.txt")") then
 if PandaAuth:ValidateKey(ServiceID, readfile("SIlver/key.txt")) then
     for a, v in ipairs(game.CoreGui:GetChildren()) do
         if v.Name == "Silver Hub GUI" then
@@ -4751,4 +4752,5 @@ if PandaAuth:ValidateKey(ServiceID, readfile("SIlver/key.txt")) then
             script()
         end
     end
+end
 end
