@@ -4743,13 +4743,15 @@ Section11.CreateButton({Title = 'Copy Get Key Link'}, function()
     }) 
 end)
 -- Validation ( Regular Key )
-if isfile(""SIlver/key.txt")") then
+if isfile("SIlver/key.txt") then
 if PandaAuth:ValidateKey(ServiceID, readfile("SIlver/key.txt")) then
     for a, v in ipairs(game.CoreGui:GetChildren()) do
         if v.Name == "Silver Hub GUI" then
             v:Destroy()
             print('authenticated')
             script()
+        elseif  not PandaAuth:ValidateKey(ServiceID, readfile("SIlver/key.txt")) then
+            delfile("SIlver/key.txt")
         end
     end
 end
