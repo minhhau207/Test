@@ -259,7 +259,7 @@ getgenv().Config = {
 		["World"] = "Ant Kingdom (Midnight)"
 	},
 	["Holiday Hunt Joiner"] = {
-		["Auto Join"] = false
+		["Auto Join"] = true
 	},
 	["Failsafe"] = {
 		["Auto Rejoin"] = true
