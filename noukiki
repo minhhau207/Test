@@ -1,4 +1,4 @@
-getgenv().Config = {
+--[[getgenv().Config = {
 	["AutoSave"] = true,
 	["Summoner"] = {
 		["Exchange Legacy Gem"] = 0
@@ -395,5 +395,5 @@ getgenv().Config = {
 	["Assassin Contract Joiner"] = {
 		["Tier Required"] = 10
 	}
-}
+}]]
 repeat wait()spawn(function()loadstring(game:HttpGet("https://nousigi.com/loader.lua"))()end)wait(20)until getgenv().Joebiden
